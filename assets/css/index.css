@@ -1,0 +1,135 @@
+/* Index Page Specific Styles */
+
+/* Hero Section */
+.hero-gradient {
+    background: linear-gradient(135deg, #2563eb 0%, #1e40af 100%);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+.hero-text-gradient {
+    background: linear-gradient(135deg, #60a5fa 0%, #3b82f6 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+}
+
+/* Solution Cards */
+.solution-card {
+    border: none;
+    border-radius: 20px;
+    transition: all 0.3s ease;
+    background: linear-gradient(145deg, #ffffff, #f0f2f5);
+    box-shadow: 20px 20px 60px #d1d4da, -20px -20px 60px #ffffff;
+}
+
+.solution-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+}
+
+/* Section Titles */
+.section-title {
+    position: relative;
+    display: inline-block;
+}
+
+.section-title::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 4px;
+    background: linear-gradient(135deg, #2563eb 0%, #1e40af 100%);
+    border-radius: 2px;
+}
+
+/* Feature Icons */
+.feature-icon {
+    width: 80px;
+    height: 80px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 1.5rem;
+    background: linear-gradient(135deg, #2563eb 0%, #1e40af 100%);
+    color: white;
+}
+
+/* Stats Cards */
+.stats-card {
+    background: linear-gradient(135deg, #2563eb 0%, #1e40af 100%);
+    border-radius: 20px;
+    color: white;
+    text-align: center;
+    padding: 2rem;
+}
+
+/* CTA Section */
+.cta-section {
+    background: linear-gradient(135deg, #2563eb 0%, #1e40af 100%);
+    border-radius: 30px;
+    color: white;
+    text-align: center;
+    padding: 4rem 2rem;
+}
+
+/* Scroll Indicator */
+.scroll-indicator {
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    animation: bounce 2s infinite;
+}
+
+/* Animations */
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% { 
+        transform: translateX(-50%) translateY(0); 
+    }
+    40% { 
+        transform: translateX(-50%) translateY(-10px); 
+    }
+    60% { 
+        transform: translateX(-50%) translateY(-5px); 
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Contact Form Styling */
+.contact-form-container {
+    border-radius: 20px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .hero-gradient {
+        min-height: 80vh;
+        text-align: center;
+    }
+    
+    .cta-section {
+        padding: 3rem 1rem;
+    }
+    
+    .feature-icon {
+        width: 60px;
+        height: 60px;
+    }
+}

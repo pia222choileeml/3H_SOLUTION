@@ -1,0 +1,128 @@
+/**
+ * Motorsports Page Styles
+ * 3H-Solutions Motorsports section styling
+ */
+
+:root {
+    --primary-color: #0c7ff2;
+    --secondary-color: #e0f2fe;
+    --background-color: #f9f9f9;
+    --text-primary: #111827;
+    --text-secondary: #6b7280;
+    --accent-color: #bfdbfe;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: var(--background-color);
+    color: var(--text-primary);
+}
+
+.btn-primary {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+}
+
+.btn-primary:hover {
+    background-color: #0b6fd8;
+    border-color: #0b6fd8;
+}
+
+.text-primary-custom {
+    color: var(--primary-color);
+}
+
+.text-secondary-custom {
+    color: var(--text-secondary);
+}
+
+.navbar-custom {
+    background-color: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(10px);
+}
+
+.card-hover:hover {
+    transform: translateY(-5px);
+    transition: transform 0.3s ease;
+}
+
+/* Hero Section Styling */
+.hero-section {
+    background: linear-gradient(135deg, var(--primary-color) 0%, #1e40af 100%);
+    border-radius: 15px;
+    padding: 4rem 2rem;
+    margin-bottom: 3rem;
+}
+
+/* Media Section Enhancements */
+.media-card {
+    border: none;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.media-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+/* Video Thumbnail Styling */
+.video-thumbnail {
+    background: linear-gradient(135deg, #374151 0%, #1f2937 100%);
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+}
+
+.play-button {
+    background: linear-gradient(135deg, var(--primary-color) 0%, #1e40af 100%);
+    border: none;
+    box-shadow: 0 4px 15px rgba(12, 127, 242, 0.3);
+    transition: all 0.3s ease;
+}
+
+.play-button:hover {
+    transform: scale(1.1);
+    box-shadow: 0 6px 20px rgba(12, 127, 242, 0.4);
+}
+
+/* Table Styling */
+.table-custom {
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Section Titles */
+.section-title {
+    position: relative;
+    padding-bottom: 1rem;
+    margin-bottom: 2rem;
+}
+
+.section-title::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 60px;
+    height: 3px;
+    background: linear-gradient(135deg, var(--primary-color) 0%, #1e40af 100%);
+    border-radius: 2px;
+}
+
+/* Achievement Cards */
+.achievement-card {
+    background: linear-gradient(135deg, var(--secondary-color) 0%, #f0f9ff 100%);
+    border: none;
+    border-radius: 15px;
+    padding: 2rem;
+    transition: all 0.3s ease;
+}
+
+.achievement-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+}
