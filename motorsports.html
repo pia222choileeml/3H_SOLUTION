@@ -1,17 +1,18 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-i18n-title="motorsports.title">
 <head>
     <meta charset="utf-8"/>
-    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-    <title>Motorsports Solutions - 3H-Solutions</title>
+    <meta content="width=device-width                        <img src="images/automotive-manufacturing.jpg" class="img-fluid rounded shadow-sm" alt="실시간 데이터 수집 시스템"> initial-scale=1.0" name="viewport"/>
+    <title>차세대 모터스포츠 기술 - 3H-Solutions</title>
     <link href="data:image/x-icon;base64," rel="icon" type="image/x-icon"/>
     <link crossorigin="" href="https://fonts.gstatic.com/" rel="preconnect"/>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&display=swap" rel="stylesheet"/>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous"/>
+    <link href="components/bootstrap.min.css" rel="stylesheet"/>
     <link href="components/common-styles.css" rel="stylesheet"/>
-    <link href="assets/css/motorsports.css" rel="stylesheet"/>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
+    <script src="components/bootstrap.min.js"></script>
     <script src="components/common.js"></script>
+    <script src="components/i18n.js"></script>
 </head>
 <body>
     <!-- Navigation Bar Placeholder -->
@@ -20,121 +21,231 @@
     <main style="padding-top: 80px;">
         <div class="container py-5">
             <!-- Hero Section -->
-            <section class="hero-section text-center text-white mb-5">
-                <h1 class="display-3 fw-bold mb-4">Motorsports Solutions</h1>
-                <p class="lead mx-auto" style="max-width: 700px;">
-                    Driving the future of racing with cutting-edge AI. We partner with leading motorsports teams to unlock peak performance, enhance safety, and redefine the limits of speed.
+            <section class="text-center mb-5">
+                <h1 class="display-4 fw-bold mb-4 text-primary-custom" data-i18n="motorsports.title">차세대 모터스포츠 기술</h1>
+                <p class="lead text-secondary-custom mx-auto" style="max-width: 800px;">
+                    <strong data-i18n="motorsports.subtitle">레이싱의 미래를 혁신합니다</strong><br>
+                    <span data-i18n="motorsports.intro">최첨단 센서 기술, AI 분석, 실시간 데이터 처리로 모터스포츠의 새로운 차원을 제시합니다. 
+                    경주용 차량의 모든 데이터를 실시간으로 분석하여 최적의 성능과 전략을 제시해드립니다.</span>
                 </p>
-            </section>
-
-            <!-- Technology Collaboration -->
-            <section class="mb-5">
-                <h2 class="section-title h2 fw-bold mb-4">Technology Collaboration</h2>
-                <div class="achievement-card">
-                    <p class="text-secondary-custom mb-0">
-                        We collaborate with top motorsports teams, providing cutting-edge AI solutions to enhance vehicle performance and driver safety. Our technology is integrated into various aspects of racing, from real-time data analysis to predictive modeling, giving our partners a competitive edge.
-                    </p>
+                <div class="d-flex justify-content-center gap-3 flex-wrap mt-4">
+                    <span class="badge bg-danger px-3 py-2" data-i18n="motorsports.badges.bigdata">빅데이터 분석</span>
+                    <span class="badge bg-warning px-3 py-2" data-i18n="motorsports.badges.customAI">맞춤형 AI 모델</span>
+                    <span class="badge bg-success px-3 py-2" data-i18n="motorsports.badges.realtime">실시간 피드백</span>
+                    <span class="badge bg-info px-3 py-2" data-i18n="motorsports.badges.prediction">예측 알고리즘</span>
                 </div>
             </section>
 
-            <!-- Achievements -->
+            <!-- Core Technologies -->
             <section class="mb-5">
-                <h2 class="section-title h2 fw-bold mb-4">Achievements</h2>
-                <div class="achievement-card">
-                    <p class="text-secondary-custom mb-0">
-                        Our AI-driven solutions have contributed to numerous victories and podium finishes in major racing events. We are proud to be part of the success stories of our partner teams, consistently pushing the boundaries of what's possible in motorsports.
-                    </p>
-                </div>
-            </section>
-
-            <!-- Participated Competitions -->
-            <section class="mb-5">
-                <h2 class="section-title h2 fw-bold mb-4">Participated Competitions</h2>
-                <div class="table-responsive">
-                    <table class="table table-striped table-custom">
-                        <thead class="table-dark">
-                            <tr>
-                                <th scope="col">Competition</th>
-                                <th scope="col">Year</th>
-                                <th scope="col">Team</th>
-                                <th scope="col">Result</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>Formula Racing Championship</td>
-                                <td>2023</td>
-                                <td>Team Alpha</td>
-                                <td><span class="badge bg-success">1st Place</span></td>
-                            </tr>
-                            <tr>
-                                <td>Global Touring Series</td>
-                                <td>2022</td>
-                                <td>Team Beta</td>
-                                <td><span class="badge bg-primary">2nd Place</span></td>
-                            </tr>
-                            <tr>
-                                <td>Endurance Racing League</td>
-                                <td>2021</td>
-                                <td>Team Gamma</td>
-                                <td><span class="badge bg-warning">3rd Place</span></td>
-                            </tr>
-                        </tbody>
-                    </table>
-                </div>
-            </section>
-
-            <!-- Media -->
-            <section class="mb-5">
-                <h2 class="section-title h2 fw-bold mb-4">Media Gallery</h2>
-                <div class="row g-4 mb-4">
-                    <div class="col-md-4">
-                        <div class="media-card card h-100">
-                            <img src="assets/images/motorsports/racing-1.jpg" class="card-img-top" alt="Racing Image 1" style="height: 200px; object-fit: cover;">
+                <h2 class="h2 fw-bold mb-4 text-center" data-i18n="motorsports.servicesTitle">3H-Solutions 핵심 서비스</h2>
+                
+                <!-- 1. 모터?�포�??�양???�이??분석 -->
+                <div class="row mb-5 align-items-center">
+                    <div class="col-md-7">
+                        <h3 class="h4 fw-bold mb-3 text-primary-custom" data-i18n="motorsports.service1.title">1. 모터스포츠 빅데이터 분석</h3>
+                        <p class="text-secondary-custom mb-3">
+                            <span data-i18n="motorsports.service1.description">F1급 데이터 수집 시스템이 엔진 텔레메트리, 서스펜션 역학, 공기역학적 힘, GPS 위치, 드라이버 생체 신호를 포함한 500개 이상의 센서에서 실시간 데이터를 고급 AI 알고리즘으로 분석합니다.</span>
+                        </p>
+                        <div class="row">
+                            <div class="col-6">
+                                <ul class="list-unstyled text-secondary-custom small">
+                                    <li class="mb-2" data-i18n="motorsports.service1.feature1">• 엔진 성능: RPM, 토크, 온도, 파워</li>
+                                    <li class="mb-2" data-i18n="motorsports.service1.feature2">• 타이어 분석: 마모, 그립 레벨, 최적 압력</li>
+                                    <li class="mb-2" data-i18n="motorsports.service1.feature3">• 전기 데이터: 배터리 상태, 에너지 회수</li>
+                                    <li class="mb-2" data-i18n="motorsports.service1.feature4">• 열 관리: 냉각 시스템, 브레이크 온도</li>
+                                </ul>
+                            </div>
+                            <div class="col-6">
+                                <ul class="list-unstyled text-secondary-custom small">
+                                    <li class="mb-2" data-i18n="motorsports.service1.feature5">• 텔레메트리: 실시간 무선 데이터 전송</li>
+                                    <li class="mb-2" data-i18n="motorsports.service1.feature6">• 예측 분석: 레이스 전략 최적화</li>
+                                    <li class="mb-2" data-i18n="motorsports.service1.feature7">• 드라이버 분석: 심박수, 반응 시간</li>
+                                    <li class="mb-2" data-i18n="motorsports.service1.feature8">• 공기역학: 다운포스, 항력 계수</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="mt-3">
+                            <span class="badge bg-primary" data-i18n="motorsports.service1.badge1">실시간 처리</span>
+                            <span class="badge bg-success" data-i18n="motorsports.service1.badge2">99.99% 정확도</span>
+                            <span class="badge bg-warning" data-i18n="motorsports.service1.badge3">머신러닝 분석</span>
                         </div>
                     </div>
-                    <div class="col-md-4">
-                        <div class="media-card card h-100">
-                            <img src="assets/images/motorsports/racing-2.jpg" class="card-img-top" alt="Racing Image 2" style="height: 200px; object-fit: cover;">
+                    <div class="col-md-5">
+                        <img src="images/racing-1.jpg" class="img-fluid rounded shadow-sm" alt="모터스포츠 빅데이터 분석">
+                    </div>
+                </div>
+
+                <!-- 2. 고객 맞춤??AI 모델 개발 -->
+                <div class="row mb-5 align-items-center">
+                    <div class="col-md-5 order-md-1">
+                        <img src="images/racing-2.jpg" class="img-fluid rounded shadow-sm" alt="맞춤형 AI 모델 개발">
+                    </div>
+                    <div class="col-md-7 order-md-2">
+                        <h3 class="h4 fw-bold mb-3 text-primary-custom" data-i18n="motorsports.service2.title">2. 맞춤형 AI 모델 개발</h3>
+                        <p class="text-secondary-custom mb-3">
+                            <span data-i18n="motorsports.service2.description">개별 차량 특성, 드라이버 선호도, 트랙 조건을 기반으로 맞춤형 AI 모델을 개발합니다. 신경망이 수백 개의 데이터 포인트를 분석하여 최적의 설정과 전략을 제안합니다.</span>
+                        </p>
+                        <div class="row">
+                            <div class="col-6">
+                                <ul class="list-unstyled text-secondary-custom small">
+                                    <li class="mb-2" data-i18n="motorsports.service2.feature1">• 드라이버 프로파일링: 개인 주행 패턴 분석</li>
+                                    <li class="mb-2" data-i18n="motorsports.service2.feature2">• 차량 설정: 서스펜션, 공기역학, 기어비</li>
+                                    <li class="mb-2" data-i18n="motorsports.service2.feature3">• 전략 계획: 타이어, 연료, 피트 스톱</li>
+                                    <li class="mb-2" data-i18n="motorsports.service2.feature4">• 날씨 데이터: 다양한 날씨 시나리오</li>
+                                </ul>
+                            </div>
+                            <div class="col-6">
+                                <ul class="list-unstyled text-secondary-custom small">
+                                    <li class="mb-2" data-i18n="motorsports.service2.feature5">• 트랙 분석: 최적 레이싱 라인</li>
+                                    <li class="mb-2" data-i18n="motorsports.service2.feature6">• 경쟁자 분석: 레이싱 패턴 예측</li>
+                                    <li class="mb-2" data-i18n="motorsports.service2.feature7">• 안전 시스템: 위험 평가 및 예방</li>
+                                    <li class="mb-2" data-i18n="motorsports.service2.feature8">• 성능 최적화: 랩 타임 개선</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="mt-3">
+                            <span class="badge bg-info">맞춤형 AI</span>
+                            <span class="badge bg-danger">딥러닝</span>
+                            <span class="badge bg-secondary">예측 모델</span>
                         </div>
                     </div>
-                    <div class="col-md-4">
-                        <div class="media-card card h-100">
-                            <div class="card-img-top bg-secondary d-flex align-items-center justify-content-center" style="height: 200px;">
-                                <div class="text-white text-center">
-                                    <svg fill="currentColor" height="64" viewBox="0 0 256 256" width="64" xmlns="http://www.w3.org/2000/svg">
-                                        <path d="M240,120h-8.88l-36.44-36.44A16,16,0,0,0,183.31,80H168V52a12,12,0,0,0-12-12H100A12,12,0,0,0,88,52V80H72.69a16,16,0,0,0-11.31,4.69L24.88,120H16a8,8,0,0,0,0,16H32.58A16,16,0,0,0,40,152h4v32a8,8,0,0,0,8,8H64a8,8,0,0,0,8-8V152h112v32a8,8,0,0,0,8,8h12a8,8,0,0,0,8-8V152h4a16,16,0,0,0,7.42-16H240a8,8,0,0,0,0-16ZM104,56h48V80H104ZM75.31,96H180.69l24,24H51.31Z"/>
+                </div>
+
+                <!-- 3. ?�시�??�이???�집 �??�드�?-->
+                <div class="row mb-5 align-items-center">
+                    <div class="col-md-7">
+                        <h3 class="h4 fw-bold mb-3 text-primary-custom" data-i18n="motorsports.service3.title">3. 실시간 의사결정 지원 시스템</h3>
+                        <p class="text-secondary-custom mb-3">
+                            <span data-i18n="motorsports.service3.description">고급 시스템이 레이스 중 실시간 전략 권장사항을 제공하며, 현재 조건을 분석하고 피트 스톱, 타이어 교체, 전술적 결정의 최적 타이밍을 예측합니다.</span>
+                        </p>
+                        <div class="row">
+                            <div class="col-6">
+                                <ul class="list-unstyled text-secondary-custom small">
+                                    <li class="mb-2" data-i18n="motorsports.service3.feature1">• 라이브 전략 업데이트</li>
+                                    <li class="mb-2" data-i18n="motorsports.service3.feature2">• 피트 스톱 최적화</li>
+                                    <li class="mb-2" data-i18n="motorsports.service3.feature3">• 날씨 영향 분석</li>
+                                    <li class="mb-2" data-i18n="motorsports.service3.feature4">• 연료 관리</li>
+                                </ul>
+                            </div>
+                            <div class="col-6">
+                                <ul class="list-unstyled text-secondary-custom small">
+                                    <li class="mb-2" data-i18n="motorsports.service3.feature5">• 타이어 성능 모니터링</li>
+                                    <li class="mb-2" data-i18n="motorsports.service3.feature6">• 경쟁자 위치 추적</li>
+                                    <li class="mb-2" data-i18n="motorsports.service3.feature7">• 위험 평가 알림</li>
+                                    <li class="mb-2" data-i18n="motorsports.service3.feature8">• 성능 최적화 팁</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="mt-3">
+                            <span class="badge bg-success">실시간</span>
+                            <span class="badge bg-warning">IoT 센서</span>
+                            <span class="badge bg-primary">5G 통신</span>
+                        </div>
+                    </div>
+                    <div class="col-md-5">
+                        <img src="images/automotive-manufacturing.jpg" class="img-fluid rounded shadow-sm" alt="?�시�??�이???�집 ?�스??>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Technology Stack -->
+            <section class="mb-5">
+                <h2 class="h2 fw-bold mb-4 text-center" data-i18n="motorsports.technology.title">최신 기술 스택</h2>
+                <div class="row g-4">
+                    <div class="col-lg-3 col-md-6">
+                        <div class="card h-100 text-center card-hover">
+                            <div class="card-body">
+                                <div class="text-primary-custom mb-3">
+                                    <svg width="48" height="48" fill="currentColor" viewBox="0 0 256 256">
+                                        <path d="M229.66,218.34l-50.07-50.06a88.11,88.11,0,1,0-11.31,11.31l50.06,50.07a8,8,0,0,0,11.32-11.32ZM40,112a72,72,0,1,1,72,72A72.08,72.08,0,0,1,40,112Z"/>
                                     </svg>
-                                    <p class="mt-2 mb-0 small">Racing Image 3</p>
                                 </div>
+                                <h6 class="card-title fw-bold" data-i18n="motorsports.technology.aiml.title">AI/ML 분석</h6>
+                                <p class="card-text text-secondary-custom small" data-i18n="motorsports.technology.aiml.description">TensorFlow, PyTorch<br>딥러닝 예측 분석</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="card h-100 text-center card-hover">
+                            <div class="card-body">
+                                <div class="text-primary-custom mb-3">
+                                    <svg width="48" height="48" fill="currentColor" viewBox="0 0 256 256">
+                                        <path d="M200,48H136V24h32a8,8,0,0,0,0-16H88a8,8,0,0,0,0,16h32V48H56A32,32,0,0,0,24,80V192a32,32,0,0,0,32,32H200a32,32,0,0,0,32-32V80A32,32,0,0,0,200,48Z"/>
+                                    </svg>
+                                </div>
+                                <h6 class="card-title fw-bold" data-i18n="motorsports.technology.iot.title">IoT 센서 네트워크</h6>
+                                <p class="card-text text-secondary-custom small" data-i18n="motorsports.technology.iot.description">실시간 데이터 수집<br>500+ 센서 지원</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="card h-100 text-center card-hover">
+                            <div class="card-body">
+                                <div class="text-primary-custom mb-3">
+                                    <svg width="48" height="48" fill="currentColor" viewBox="0 0 256 256">
+                                        <path d="M240,112H229.2L201.42,49.5A16,16,0,0,0,186.8,40H69.2a16,16,0,0,0-14.62,9.5L26.8,112H16a8,8,0,0,0,0,16h8v80a16,16,0,0,0,16,16H64a16,16,0,0,0,16-16V192h96v16a16,16,0,0,0,16,16h24a16,16,0,0,0,16-16V128h8a8,8,0,0,0,0-16Z"/>
+                                    </svg>
+                                </div>
+                                <h6 class="card-title fw-bold" data-i18n="motorsports.technology.communication.title">5G/6G 통신</h6>
+                                <p class="card-text text-secondary-custom small" data-i18n="motorsports.technology.communication.description">초저지연 전송<br>1ms 응답시간</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="card h-100 text-center card-hover">
+                            <div class="card-body">
+                                <div class="text-primary-custom mb-3">
+                                    <svg width="48" height="48" fill="currentColor" viewBox="0 0 256 256">
+                                        <path d="M208,32H48A16,16,0,0,0,32,48V208a16,16,0,0,0,16,16H208a16,16,0,0,0,16-16V48A16,16,0,0,0,208,32ZM112,168a8,8,0,0,1-16,0V88a8,8,0,0,1,16,0Zm48,0a8,8,0,0,1-16,0V128a8,8,0,0,1,16,0Zm48,0a8,8,0,0,1-16,0V88a8,8,0,0,1,16,0Z"/>
+                                    </svg>
+                                </div>
+                                <h6 class="card-title fw-bold" data-i18n="motorsports.technology.cloud.title">클라우드 분석</h6>
+                                <p class="card-text text-secondary-custom small" data-i18n="motorsports.technology.cloud.description">AWS/Azure 기반<br>빅데이터 처리</p>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="position-relative">
-                    <div class="video-thumbnail rounded d-flex align-items-center justify-content-center" style="height: 300px;">
-                        <div class="text-white text-center">
-                            <svg fill="currentColor" height="80" viewBox="0 0 256 256" width="80" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M164.44,105.34l-48-32A8,8,0,0,0,104,80v64a8,8,0,0,0,12.44,6.66l48-32a8,8,0,0,0,0-13.32ZM120,129.05V95l25.58,17Z"/>
-                                <path d="M216,40H40A16,16,0,0,0,24,56V200a16,16,0,0,0,16,16H216a16,16,0,0,0,16-16V56A16,16,0,0,0,216,40Zm0,160H40V56H216V200Z"/>
-                            </svg>
-                            <p class="mt-2 mb-0">Motorsports Highlight Reel</p>
-                        </div>
-                    </div>
-                    <div class="position-absolute top-50 start-50 translate-middle">
-                        <button class="play-button btn btn-primary btn-lg rounded-circle d-flex align-items-center justify-content-center" style="width: 80px; height: 80px;">
-                            ▶
-                        </button>
-                    </div>
-                </div>
             </section>
+
+            
         </div>
     </main>
 
     <!-- Footer Placeholder -->
     <div id="footer-placeholder"></div>
 
-    <!-- Motorsports Page Scripts -->
-    <script src="assets/js/motorsports.js"></script>
+    <!-- I18n Initialization -->
+    <script>
+        document.addEventListener('DOMContentLoaded', async function() {
+            try {
+                window.i18n = new I18n();
+                await window.i18n.init();
+                
+                const observer = new MutationObserver(function(mutations) {
+                    mutations.forEach(function(mutation) {
+                        if (mutation.type === 'childList' && mutation.addedNodes.length > 0) {
+                            setTimeout(() => {
+                                if (window.i18n) window.i18n.updatePage();
+                            }, 100);
+                        }
+                    });
+                });
+                
+                const navbarPlaceholder = document.getElementById('navbar-placeholder');
+                const footerPlaceholder = document.getElementById('footer-placeholder');
+                
+                if (navbarPlaceholder) {
+                    observer.observe(navbarPlaceholder, { childList: true, subtree: true });
+                }
+                if (footerPlaceholder) {
+                    observer.observe(footerPlaceholder, { childList: true, subtree: true });
+                }
+            } catch (error) {
+                console.error('Error initializing i18n:', error);
+            }
+        });
+    </script>
 </body>
 </html>
+

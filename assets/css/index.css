@@ -11,20 +11,20 @@
 }
 
 .hero-gradient::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><circle cx="50" cy="50" r="1" fill="rgba(255,255,255,0.1)"/></svg>') repeat;
-    background-size: 50px 50px;
-    animation: float 20s ease-in-out infinite;
+    /* content: ''; */
+    /* position: absolute; */
+    /* top: 0; */
+    /* left: 0; */
+    /* right: 0; */
+    /* bottom: 0; */
+    /* background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><circle cx="50" cy="50" r="1" fill="rgba(255,255,255,0.1)"/></svg>') repeat; */
+    /* background-size: 50px 50px; */
+    /* animation: float 20s ease-in-out infinite; */
 }
 
 @keyframes float {
-    0%, 100% { transform: translateY(0px) rotate(0deg); }
-    50% { transform: translateY(-20px) rotate(180deg); }
+    /* 0%, 100% { transform: translateY(0px) rotate(0deg); }
+    50% { transform: translateY(-20px) rotate(180deg); } */
 }
 
 .hero-text-gradient {
@@ -37,40 +37,40 @@
 
 /* AI Visual Effects */
 .ai-hero-visual {
-    animation: pulse 4s ease-in-out infinite;
-    transition: transform 0.3s ease;
+    /* animation: pulse 4s ease-in-out infinite; */
+    /* transition: transform 0.3s ease; */
 }
 
 .ai-hero-visual:hover {
-    transform: scale(1.02);
+    /* transform: scale(1.02); */
 }
 
 .ai-hero-visual img {
-    transition: filter 0.3s ease;
+    /* transition: filter 0.3s ease; */
 }
 
 .ai-hero-visual:hover img {
-    filter: brightness(1.1) saturate(1.1);
+    /* filter: brightness(1.1) saturate(1.1); */
 }
 
 /* 3H Badge Animation */
 .ai-hero-visual .badge {
-    animation: badgePulse 2s ease-in-out infinite;
-    animation-delay: var(--delay, 0s);
+    /* animation: badgePulse 2s ease-in-out infinite; */
+    /* animation-delay: var(--delay, 0s); */
 }
 
-.ai-hero-visual .badge:nth-child(1) { --delay: 0s; }
-.ai-hero-visual .badge:nth-child(2) { --delay: 0.3s; }
-.ai-hero-visual .badge:nth-child(3) { --delay: 0.6s; }
+.ai-hero-visual .badge:nth-child(1) { /* --delay: 0s; */ }
+.ai-hero-visual .badge:nth-child(2) { /* --delay: 0.3s; */ }
+.ai-hero-visual .badge:nth-child(3) { /* --delay: 0.6s; */ }
 
 @keyframes badgePulse {
-    0%, 100% { transform: scale(1); opacity: 0.8; }
-    50% { transform: scale(1.1); opacity: 1; }
+    /* 0%, 100% { transform: scale(1); opacity: 0.8; }
+    50% { transform: scale(1.1); opacity: 1; } */
 }
 
 @keyframes pulse {
-    0%, 100% { transform: scale(1); opacity: 0.9; }
-    50% { transform: scale(1.05); opacity: 1; }
+    /* 0%, 100% { transform: scale(1); opacity: 0.9; }
+    50% { transform: scale(1.05); opacity: 1; } */
 }
 
 .about-visual-container {

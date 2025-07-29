@@ -1,0 +1,504 @@
+{
+  "common": {
+    "company": "3H-Solutions",
+    "home": "홈",
+    "services": "서비스",
+    "about": "회사소개",
+    "contact": "연락처",
+    "language": "언어",
+    "korean": "한국어",
+    "english": "영어"
+  },
+  "nav": {
+    "services": "서비스",
+    "solutions": "솔루션",
+    "company": "회사소개",
+    "sections": {
+      "aiIntelligence": "AI & Intelligence",
+      "industryApps": "Industry Applications"
+    },
+    "smartFactory": {
+      "title": "스마트 팩토리",
+      "desc": "AI 기반 스마트 팩토리 솔루션으로 생산성 혁신"
+    },
+    "llm": {
+      "title": "LLM",
+      "desc": "대화형 AI와 자연어 처리 기술"
+    },
+    "computerVision": {
+      "title": "컴퓨터 비전",
+      "desc": "첨단 컴퓨터 비전으로 품질 검사 자동화"
+    },
+    "carTuning": {
+      "title": "차량 튜닝",
+      "desc": "정밀한 ECU 튜닝과 차량 성능 최적화"
+    },
+    "motorsports": {
+      "title": "모터스포츠",
+      "desc": "레이싱 데이터 분석과 성능 모니터링"
+    },
+    "cableCar": {
+      "title": "케이블카",
+      "desc": "스마트 케이블카 시스템 운영 솔루션"
+    }
+  },
+  "megaMenu": {
+    "services": {
+      "ai": {
+        "title": "AI & Intelligence",
+        "smartFactory": "스마트 팩토리",
+        "llm": "LLM 솔루션",
+        "vision": "컴퓨터 비전"
+      },
+      "industry": {
+        "title": "산업 응용",
+        "tuning": "차량 튜닝",
+        "motorsports": "모터스포츠",
+        "cablecar": "케이블카 시스템"
+      },
+      "consulting": {
+        "title": "컨설팅 서비스",
+        "digital": "디지털 전환",
+        "automation": "자동화 컨설팅",
+        "optimization": "공정 최적화"
+      }
+    },
+    "solutions": {
+      "core": {
+        "title": "핵심 솔루션",
+        "manufacturing": "제조업 혁신",
+        "ai": "AI 플랫폼",
+        "quality": "품질 관리"
+      },
+      "specialized": {
+        "title": "특화 솔루션",
+        "automotive": "자동차 산업",
+        "racing": "레이싱 기술",
+        "transport": "교통 시스템"
+      },
+      "support": {
+        "title": "지원 서비스",
+        "training": "교육 프로그램",
+        "maintenance": "유지보수",
+        "upgrade": "업그레이드"
+      }
+    },
+    "company": {
+      "about": {
+        "title": "회사 정보",
+        "overview": "회사 개요",
+        "history": "연혁",
+        "vision": "비전"
+      },
+      "team": {
+        "title": "팀 & 인재",
+        "leadership": "경영진",
+        "careers": "채용 정보",
+        "culture": "기업 문화"
+      },
+      "contact": {
+        "title": "연락처",
+        "info": "연락처 정보",
+        "location": "오시는 길",
+        "inquiry": "문의하기"
+      }
+    }
+  },
+  "footer": {
+    "privacy": "개인정보처리방침",
+    "terms": "이용약관",
+    "contact": "문의하기",
+    "copyright": "© 2024 3H-Solutions. All rights reserved."
+  },
+  "index": {
+    "hero": {
+      "title": "첨단 기술로 미래를 향해<br>전진하는 기업",
+      "description": "AI 기술의 무한한 가능성을 통해 모든 산업 분야에서 혁신적인 변화를 이끌어내는 글로벌 기술 파트너입니다.",
+      "exploreBtn": "솔루션 살펴보기",
+      "contactBtn": "문의하기"
+    },
+    "solutions": {
+      "title": "Our Solutions",
+      "subtitle": "다양한 산업 분야에 특화된 AI 솔루션을 제공합니다",
+      "learnMore": "자세히 보기",
+      "smartFactory": {
+        "title": "Smart Factory",
+        "description": "AI 기반 스마트 팩토리 솔루션으로 생산성 향상과 품질 관리를 실현합니다."
+      },
+      "computerVision": {
+        "title": "Computer Vision",
+        "description": "첨단 컴퓨터 비전 기술로 품질 검사와 자동화를 혁신합니다."
+      },
+      "llm": {
+        "title": "LLM Solutions",
+        "description": "대화형 AI와 자연어 처리 기술로 비즈니스 혁신을 지원합니다."
+      },
+      "carTuning": {
+        "title": "Car Tuning",
+        "description": "정밀한 ECU 튜닝과 성능 최적화로 차량의 잠재력을 극대화합니다."
+      },
+      "motorsports": {
+        "title": "Motorsports",
+        "description": "레이싱 데이터 분석과 성능 모니터링으로 경쟁 우위를 확보합니다."
+      },
+      "cableCar": {
+        "title": "Cable Car Systems",
+        "description": "스마트 케이블카 시스템으로 안전하고 효율적인 운영을 지원합니다."
+      }
+    },
+    "about": {
+      "title": "About 3H-Solutions",
+      "slogan": "\"첨단 기술로 미래를 향해 전진하는 기업\"",
+      "description": "3H-Solutions는 세 가지 핵심 가치를 바탕으로 AI 혁신을 선도합니다.",
+      "headway": {
+        "title": "Headway",
+        "description": "끊임없는 전진과 기술 발전을 통해 업계를 선도합니다"
+      },
+      "hightech": {
+        "title": "High-tech",
+        "description": "최첨단 AI 기술과 혁신적인 솔루션을 개발합니다"
+      },
+      "horizon": {
+        "title": "Horizon",
+        "description": "새로운 가능성을 탐구하며 글로벌 시장으로 확장합니다"
+      },
+      "stats": {
+        "innovation": "Innovation Leader",
+        "solutions": "Core Solutions",
+        "infinity": "Innovation"
+      }
+    },
+    "contact": {
+      "title": "Contact Us",
+      "subtitle": "궁금한 점이 있으시면 언제든 연락주세요",
+      "email": {
+        "title": "이메일"
+      },
+      "phone": {
+        "title": "전화"
+      },
+      "address": {
+        "title": "주소",
+        "content": "경기도 광명시 일직로 72<br>광명무역센터 C동 416호<br>대한민국"
+      }
+    }
+  },
+  "llm": {
+    "intro": "대규모 언어 모델을 활용하여 자연어 이해와 생성을 혁신하고, 다양한 비즈니스 영역에서 지능형 솔루션을 제공합니다.",
+    "badge1": "퀀텀 트레이딩",
+    "badge2": "AI 면접 서비스",
+    "badge3": "LLM 협업 툴",
+    "badge4": "환각 방지",
+    "service1Title": "맞춤형 모델 개발",
+    "service1Desc": "기업 특화 요구사항에 맞춘 고성능 LLM을 개발하여 최적의 성능을 보장합니다.",
+    "service2Title": "통합 & 배포",
+    "service2Desc": "기존 시스템과 완벽하게 통합하여 업무 효율성과 생산성을 극대화하는 LLM 솔루션을 제공합니다.",
+    "service3Title": "성능 최적화",
+    "service3Desc": "실제 운영 환경에서 최고의 정확도와 응답성을 보장하는 LLM 파인튜닝 및 최적화를 제공합니다.",
+    "industryApp1": {
+      "title": "스마트 팩토리 자동화",
+      "description": "AI 기반 자동화와 예측 유지보수로 공장 효율성과 생산성을 향상시킵니다."
+    },
+    "industryApp2": {
+      "title": "고급 자동차 튜닝",
+      "description": "AI 기반 튜닝 솔루션으로 차량 성능과 핸들링을 최적화합니다."
+    },
+    "industryApp3": {
+      "title": "케이블카 관리",
+      "description": "실시간 모니터링과 제어로 케이블카 시스템의 안전성과 운영 효율성을 개선합니다."
+    },
+    "usecase1Title": "주식분석 및 투자 추천",
+    "usecase1Desc": "퀀텀 트레이딩 기술을 활용한 AI 기반 주식 시장 분석으로 최신 투자 인사이트와 개인 맞춤형 트레이딩 추천을 제공합니다.",
+    "usecase1Badge1": "시장분석",
+    "usecase1Badge2": "머신러닝 알고리즘",
+    "usecase1Badge3": "위험 관리",
+    "usecase2Title": "AI 면접 및 인재 평가",
+    "usecase2Desc": "첨단 자연어처리와 감정 인식 기술을 활용한 AI 면접 솔루션으로 객관적이고 공정한 인재 평가를 실현합니다.",
+    "usecase2Badge1": "성향 분석",
+    "usecase2Badge2": "감정 인식",
+    "usecase2Badge3": "객관적 평가",
+    "usecase3Title": "LLM 기반 협업 플랫폼",
+    "usecase3Desc": "다양한 협업 분야에 특화된 맞춤형 LLM 솔루션을 제공합니다. 기업 지식관리, 자동 문서 생성, 고객 서비스 자동화 등을 구현합니다.",
+    "usecase3Badge1": "맞춤형 AI",
+    "usecase3Badge2": "업무 자동화",
+    "usecase3Badge3": "통합 협업",
+    "usecase4Title": "RAG 서비스 및 환각 방지",
+    "usecase4Desc": "RAG 기술을 통해 AI 모델의 환각 현상을 방지하고, 정확하고 신뢰할 수 있는 정보 제공을 보장합니다.",
+    "usecase4Badge1": "환각 방지",
+    "usecase4Badge2": "정확성 향상",
+    "usecase4Badge3": "지식 검증"
+  },
+  "cableCar": {
+    "title": "케이블카 시스템",
+    "intro": "우리의 케이블카 시스템은 안전성, 효율성, 신뢰성을 고려하여 설계되어 도시 및 관광 교통을 위한 혁신적인 솔루션을 제공합니다.",
+    "technology": {
+      "title": "기술 및 솔루션",
+      "description": "우리는 분리형 곤돌라, 고정 그립 시스템, 가역 공중 트램웨이 등 다양한 케이블카 기술을 제공합니다. 우리의 솔루션은 각 프로젝트의 특정 요구 사항에 맞게 맞춤화되어 최적의 성능과 승객 편의성을 보장합니다."
+    },
+    "installations": {
+      "title": "설치 사례",
+      "urbanTransit": {
+        "title": "도시 교통 시스템",
+        "description": "도시의 대중교통 네트워크에 통합된 케이블카 시스템"
+      },
+      "mountainResort": {
+        "title": "산악 리조트 곤돌라",
+        "description": "산악 리조트에 접근할 수 있는 곤돌라 시스템"
+      },
+      "scenicTramway": {
+        "title": "경관 공중 트램웨이",
+        "description": "경관 지역의 파노라마 전망을 제공하는 공중 트램웨이"
+      }
+    },
+    "safety": {
+      "title": "안전 및 운영",
+      "description": "우리의 케이블카 시스템은 최고의 안전 기준을 준수하며, 첨단 모니터링 및 제어 시스템을 통합합니다. 안전하고 효율적인 운영을 보장하기 위해 포괄적인 교육과 지원을 제공합니다."
+    }
+  },
+  "smartFactory": {
+    "title": "스마트 팩토리 솔루션",
+    "intro": "AI 기반 자동화, 예측 유지보수, 지능형 품질 관리 시스템으로 제조 공정을 혁신하세요.",
+    "solutionsTitle": "스마트 팩토리 솔루션",
+    "solution1": {
+      "title": "지능형 공정 최적화",
+      "description": "AI 기반 인사이트로 생산 워크플로우를 최적화하여 병목 현상을 줄이고 처리량을 극대화합니다."
+    },
+    "solution2": {
+      "title": "고급 품질 관리",
+      "description": "컴퓨터 비전을 사용한 실시간 결함 탐지 및 분석으로 제품 품질을 향상시킵니다."
+    },
+    "solution3": {
+      "title": "예측 유지보수",
+      "description": "AI로 장비 고장을 예측하여 다운타임과 유지보수 비용을 최소화합니다."
+    },
+    "storiesTitle": "성공 사례",
+    "story1": {
+      "title": "자동차 제조",
+      "description": "AI 솔루션으로 생산 효율성을 20% 증가시키고 결함률을 15% 감소시켰습니다."
+    },
+    "story2": {
+      "title": "전자 조립",
+      "description": "AI 기반 검사를 통해 품질 관리에서 99.5%의 정확도를 달성하고 폐기물을 30% 줄였습니다."
+    },
+    "story3": {
+      "title": "식품 가공",
+      "description": "스마트 팩토리 솔루션으로 식품 안전 규정 준수를 40% 개선하고 공급망 효율성을 최적화했습니다."
+    },
+    "metric1": "생산 효율성",
+    "metric2": "품질 정확도",
+    "metric3": "폐기물 감소",
+    "metric4": "비용 절감",
+    "ctaTitle": "AI로 팩토리를 혁신하세요",
+    "ctaDescription": "더 스마트하고 효율적인 팩토리로의 다음 단계를 준비하셨나요? 오늘 연락하여 AI 솔루션이 귀하의 비즈니스에 어떤 도움이 될 수 있는지 알아보세요."
+  },
+  "computerVision": {
+    "title": "컴퓨터 비전 솔루션",
+    "intro": "최첨단 컴퓨터 비전 기술로 운영을 혁신하세요. 제조업, 자동차, 교통 등 다양한 산업을 위한 솔루션을 제공합니다.",
+    "applicationsTitle": "주요 응용 분야",
+    "app1": {
+      "title": "스마트 팩토리",
+      "description": "실시간 모니터링과 결함 탐지로 생산 효율성과 품질을 향상시킵니다."
+    },
+    "app2": {
+      "title": "자동차 튜닝",
+      "description": "고급 이미지 분석과 제어 시스템을 통해 차량 성능과 안전성을 최적화합니다."
+    },
+    "app3": {
+      "title": "케이블카 안전",
+      "description": "지능형 모니터링과 제어 시스템으로 승객 안전과 운영 신뢰성을 보장합니다."
+    },
+    "projectsTitle": "주요 프로젝트",
+    "project1": {
+      "title": "스마트 팩토리 구현",
+      "description": "선도적인 제조업체가 우리의 컴퓨터 비전 솔루션으로 생산 효율성을 20% 향상시켰습니다."
+    },
+    "project2": {
+      "title": "자동차 성능 튜닝",
+      "description": "레이싱 팀이 AI 기반 튜닝 시스템으로 15%의 성능 향상을 달성했습니다."
+    },
+    "project3": {
+      "title": "케이블카 안전 시스템",
+      "description": "주요 케이블카 운영업체가 고급 모니터링 시스템으로 안전성과 신뢰성을 향상시켰습니다."
+    },
+    "technologiesTitle": "컴퓨터 비전 기술",
+    "tech1": {
+      "title": "산업용 결함 탐지",
+      "description": "딥러닝 모델을 활용한 고급 컴퓨터 비전 알고리즘으로 전례 없는 정확도로 제조 결함을 식별합니다. 시스템은 고해상도 이미지를 실시간으로 처리하여 기존 검사 방법으로는 놓칠 수 있는 미세한 결함을 탐지합니다.",
+      "feature1": "✓ 결함 탐지 99.5% 정확도",
+      "feature2": "✓ 60 FPS 실시간 처리",
+      "feature3": "✓ 기존 생산라인과 통합",
+      "feature4": "✓ 자동 품질 관리 보고"
+    },
+    "tech2": {
+      "title": "자율주행 비전",
+      "description": "컴퓨터 비전 기술로 자율주행차의 정밀한 객체 탐지, 차선 인식, 교통 표지판 해석을 지원합니다. 멀티카메라 융합으로 고급 깊이 인식과 움직임 예측을 통한 360도 환경 인식을 제공합니다.",
+      "feature1": "✓ 다중 객체 추적 및 분류",
+      "feature2": "✓ 차선 탐지 및 경로 계획",
+      "feature3": "✓ 교통 표지판 및 신호 인식",
+      "feature4": "✓ 보행자 및 장애물 회피"
+    },
+    "tech3": {
+      "title": "고급 이미지 분석",
+      "description": "CNN, YOLO, Transformer 아키텍처를 포함한 최첨단 신경망을 활용하여 산업 자동화, 보안 모니터링, 예측 유지보수 애플리케이션을 위한 포괄적인 시각 지능을 제공합니다.",
+      "feature1": "✓ 딥러닝 모델 최적화",
+      "feature2": "✓ 엣지 컴퓨팅 배포",
+      "feature3": "✓ 맞춤형 모델 훈련 및 미세 조정",
+      "feature4": "✓ 확장 가능한 클라우드 기반 처리"
+    }
+  },
+  "carTuning": {
+    "title": "고급 자동차 튜닝 솔루션",
+    "description": "AI 기반 ECU 최적화, 정밀 엔진 매핑, 고급 데이터 분석으로 차량 성능을 혁신하세요. 최첨단 튜닝 솔루션으로 안정성과 배출가스 규정 준수를 유지하면서 측정 가능한 성능 향상을 실현합니다.",
+    "servicesTitle": "기술 서비스",
+    "service1": {
+      "title": "ECU 리매핑",
+      "description": "실시간 데이터 분석을 통한 고급 엔진 제어 유닛 프로그래밍. 최대 성능을 위해 연료 맵, 점화 타이밍, 부스트 압력을 최적화합니다."
+    },
+    "service2": {
+      "title": "터보/슈퍼차저 튜닝",
+      "description": "정밀 강제 흡기 최적화. 최대 파워 전달을 위한 맞춤형 부스트 맵, 웨이스트게이트 제어, 인터쿨러 효율성 향상."
+    },
+    "service3": {
+      "title": "다이노 테스트 및 분석",
+      "description": "실시간 텔레메트리를 통한 포괄적인 동력계 테스트. 최적 튜닝을 위한 공연비 모니터링, 노크 탐지, 배출가스 분석."
+    },
+    "processTitle": "튜닝 프로세스",
+    "process1": {
+      "title": "초기 진단",
+      "description": "OBD-II 스캔, 압축 테스트, 기준선 다이노 런을 사용한 포괄적인 차량 평가로 현재 성능 매개변수를 설정합니다."
+    },
+    "process2": {
+      "title": "맞춤형 매핑",
+      "description": "특정 엔진 구성과 성능 목표에 맞춘 맞춤형 연료 및 점화 맵으로 AI 지원 ECU 캘리브레이션."
+    },
+    "process3": {
+      "title": "실시간 최적화",
+      "description": "안전한 성능 최적화를 위해 AFR, 노크 센서, 배기가스 온도를 지속적으로 모니터링하는 라이브 튜닝 세션."
+    },
+    "process4": {
+      "title": "검증 및 테스트",
+      "description": "신뢰성과 성능을 보장하기 위한 다중 파워 런, 도로 테스트, 포괄적인 데이터 로깅을 통한 최종 다이노 검증."
+    },
+    "performanceTitle": "일반적인 성능 향상",
+    "performance": {
+      "horsepower": "마력 증가",
+      "torque": "토크 향상", 
+      "efficiency": "연비 개선",
+      "acceleration": "0-100km/h 단축",
+      "disclaimer": "*결과는 차량 상태 및 개조에 따라 달라질 수 있습니다"
+    },
+    "caseStudiesTitle": "케이스 스터디 및 결과",
+    "case1": {
+      "title": "BMW M3 F80 터보 최적화",
+      "subtitle": "고성능 세단",
+      "powerGain": "마력 증가",
+      "torqueGain": "토크 증가", 
+      "accelImprovement": "0-100 단축",
+      "description": "커스텀 터보 매핑, 최적화된 연료 공급, 고급 노크 보호 기능을 갖춘 Stage 2 ECU 튜닝. 안정성을 유지하면서 총 510HP 출력을 달성했습니다."
+    },
+    "case2": {
+      "title": "Audi RS6 Avant ECU 플래시",
+      "subtitle": "트윈터보 V8 왜건",
+      "powerGain": "마력 증가",
+      "torqueGain": "토크 증가",
+      "efficiencyGain": "효율성 향상", 
+      "description": "향상된 부스트 제어, 수정된 타이밍 맵, 개선된 스로틀 반응으로 두 터보를 모두 최적화하는 Stage 1+ 튜닝. 총 출력: 695HP/850Nm."
+    },
+    "equipmentTitle": "전문 장비 및 기술",
+    "equipment": {
+      "dyno": {
+        "title": "4WD 섀시 동력계",
+        "description": "실시간 데이터 수집 및 환경 시뮬레이션으로 최대 1,500HP까지 측정 가능한 최첨단 다이노."
+      },
+      "emissions": {
+        "title": "5가스 배출가스 분석기",
+        "description": "성능을 최대화하면서 환경 규정 준수를 보장하는 전문 배출가스 테스트 장비."
+      },
+      "aiEcu": {
+        "title": "AI 기반 ECU 프로그래밍",
+        "description": "머신러닝 알고리즘이 엔진 데이터를 분석하여 기존 방법으로는 불가능한 정밀도로 성능 맵을 최적화합니다."
+      },
+      "diagnostic": {
+        "title": "고급 진단 기능",
+        "description": "포괄적인 엔진 분석 및 최적화를 위한 오실로스코프, 멀티미터, 압력 변환기, 광대역 O2 센서를 포함한 최첨단 진단 장비를 갖춘 시설입니다."
+      }
+    }
+  },
+  "motorsports": {
+    "title": "차세대 모터스포츠 기술",
+    "subtitle": "레이싱의 미래를 혁신합니다",
+    "intro": "최첨단 센서 기술, AI 분석, 실시간 데이터 처리로 레이싱 성능을 혁신하세요. 레이싱 차량의 모든 데이터 포인트를 실시간으로 분석하여 최적의 성능과 전략적 이점을 제공합니다.",
+    "badges": {
+      "bigdata": "빅데이터 분석",
+      "customAI": "맞춤형 AI 모델",
+      "realtime": "실시간 피드백",
+      "prediction": "예측 알고리즘"
+    },
+    "servicesTitle": "3H-Solutions 핵심 서비스",
+    "service1": {
+      "title": "1. 모터스포츠 빅데이터 분석",
+      "description": "F1급 데이터 수집 시스템이 엔진 텔레메트리, 서스펜션 역학, 공기역학적 힘, GPS 위치, 드라이버 생체 신호를 포함한 500개 이상의 센서에서 실시간 데이터를 고급 AI 알고리즘으로 분석합니다.",
+      "feature1": "• 엔진 성능: RPM, 토크, 온도, 파워",
+      "feature2": "• 타이어 분석: 마모, 그립 레벨, 최적 압력",
+      "feature3": "• 전기 데이터: 배터리 상태, 에너지 회수",
+      "feature4": "• 열 관리: 냉각 시스템, 브레이크 온도",
+      "feature5": "• 텔레메트리: 실시간 무선 데이터 전송",
+      "feature6": "• 예측 분석: 레이스 전략 최적화",
+      "feature7": "• 드라이버 분석: 심박수, 반응 시간",
+      "feature8": "• 공기역학: 다운포스, 항력 계수",
+      "badge1": "실시간 처리",
+      "badge2": "99.99% 정확도",
+      "badge3": "머신러닝 분석"
+    },
+    "service2": {
+      "title": "2. 맞춤형 AI 모델 개발",
+      "description": "개별 차량 특성, 드라이버 선호도, 트랙 조건을 기반으로 맞춤형 AI 모델을 개발합니다. 신경망이 수백 개의 데이터 포인트를 분석하여 최적의 설정과 전략을 제안합니다.",
+      "feature1": "• 드라이버 프로파일링: 개인 주행 패턴 분석",
+      "feature2": "• 차량 설정: 서스펜션, 공기역학, 기어비",
+      "feature3": "• 전략 계획: 타이어, 연료, 피트 스톱",
+      "feature4": "• 날씨 데이터: 다양한 날씨 시나리오",
+      "feature5": "• 트랙 분석: 최적 레이싱 라인",
+      "feature6": "• 경쟁자 분석: 레이싱 패턴 예측",
+      "feature7": "• 안전 시스템: 위험 평가 및 예방",
+      "feature8": "• 성능 최적화: 랩 타임 개선"
+    },
+    "service3": {
+      "title": "3. 실시간 의사결정 지원 시스템",
+      "description": "고급 시스템이 레이스 중 실시간 전략 권장사항을 제공하며, 현재 조건을 분석하고 피트 스톱, 타이어 교체, 전술적 결정의 최적 타이밍을 예측합니다.",
+      "feature1": "• 라이브 전략 업데이트",
+      "feature2": "• 피트 스톱 최적화",
+      "feature3": "• 날씨 영향 분석",
+      "feature4": "• 연료 관리",
+      "feature5": "• 타이어 성능 모니터링",
+      "feature6": "• 경쟁자 위치 추적",
+      "feature7": "• 위험 평가 알림",
+      "feature8": "• 성능 최적화 팁"
+    },
+    "metricsTitle": "성능 결과",
+    "metric1": "평균 랩 타임 개선",
+    "metric2": "연료 효율성 향상",
+    "metric3": "전략 예측 정확도",
+    "metric4": "위험 감소",
+    "technology": {
+      "title": "최신 기술 스택",
+      "aiml": {
+        "title": "AI/ML 분석",
+        "description": "TensorFlow, PyTorch<br>딥러닝 예측 분석"
+      },
+      "iot": {
+        "title": "IoT 센서 네트워크",
+        "description": "실시간 데이터 수집<br>500+ 센서 지원"
+      },
+      "communication": {
+        "title": "5G/6G 통신",
+        "description": "초저지연 전송<br>1ms 응답시간"
+      },
+      "cloud": {
+        "title": "클라우드 분석",
+        "description": "AWS/Azure 기반<br>빅데이터 처리"
+      }
+    },
+    "ctaTitle": "트랙을 지배할 준비가 되셨나요?",
+    "ctaDescription": "최첨단 AI 기술로 모터스포츠의 미래를 경험하세요. 오늘 연락하여 경쟁 우위를 확보하는 방법을 알아보세요."
+  }
+}

@@ -1,0 +1,210 @@
+{
+  "common": {
+    "company": "3H-Solutions",
+    "home": "홈",
+    "services": "서비스",
+    "about": "회사소개",
+    "contact": "연락처",
+    "language": "언어",
+    "korean": "한국어",
+    "english": "영어"
+  },
+  "nav": {
+    "sections": {
+      "aiIntelligence": "AI & Intelligence",
+      "industryApps": "Industry Applications"
+    },
+    "smartFactory": {
+      "title": "스마트 팩토리",
+      "desc": "AI 기반 스마트 팩토리 솔루션으로 생산성 혁신"
+    },
+    "llm": {
+      "title": "LLM",
+      "desc": "대화형 AI와 자연어 처리 기술"
+    },
+    "computerVision": {
+      "title": "컴퓨터 비전",
+      "desc": "첨단 컴퓨터 비전으로 품질 검사 자동화"
+    },
+    "carTuning": {
+      "title": "차량 튜닝",
+      "desc": "정밀한 ECU 튜닝과 차량 성능 최적화"
+    },
+    "motorsports": {
+      "title": "모터스포츠",
+      "desc": "레이싱 데이터 분석과 성능 모니터링"
+    },
+    "cableCar": {
+      "title": "케이블카",
+      "desc": "스마트 케이블카 시스템 운영 솔루션"
+    }
+  },
+  "footer": {
+    "privacy": "개인정보처리방침",
+    "terms": "이용약관",
+    "contact": "문의하기",
+    "copyright": "© 2024 3H-Solutions. All rights reserved."
+  },
+  "home": {
+    "title": "혁신적인 기술 솔루션",
+    "subtitle": "미래를 향한 기술 혁신",
+    "description": "3H-Solutions는 최첨단 기술을 활용하여 다양한 산업 분야에서 혁신적인 솔루션을 제공합니다. AI, IoT, 빅데이터 분석을 통해 고객의 비즈니스 성장을 지원합니다.",
+    "services": "주요 서비스",
+    "learnMore": "자세히 보기"
+  },
+  "index": {
+    "hero": {
+      "title": "첨단 기술로 미래를 향해<br>전진하는 기업",
+      "description": "AI 기술의 무한한 가능성을 통해 모든 산업 분야에서 혁신적인 변화를 이끌어내는 글로벌 기술 파트너입니다.",
+      "exploreBtn": "솔루션 살펴보기",
+      "contactBtn": "문의하기"
+    },
+    "solutions": {
+      "title": "Our Solutions",
+      "subtitle": "다양한 산업 분야에 특화된 AI 솔루션을 제공합니다",
+      "learnMore": "자세히 보기",
+      "smartFactory": {
+        "title": "Smart Factory",
+        "description": "AI 기반 스마트 팩토리 솔루션으로 생산성 향상과 품질 관리를 실현합니다."
+      },
+      "computerVision": {
+        "title": "Computer Vision",
+        "description": "첨단 컴퓨터 비전 기술로 품질 검사와 자동화를 혁신합니다."
+      },
+      "llm": {
+        "title": "LLM Solutions",
+        "description": "대화형 AI와 자연어 처리 기술로 비즈니스 혁신을 지원합니다."
+      },
+      "carTuning": {
+        "title": "Car Tuning",
+        "description": "정밀한 ECU 튜닝과 성능 최적화로 차량의 잠재력을 극대화합니다."
+      },
+      "motorsports": {
+        "title": "Motorsports",
+        "description": "레이싱 데이터 분석과 성능 모니터링으로 경쟁 우위를 확보합니다."
+      },
+      "cableCar": {
+        "title": "Cable Car Systems",
+        "description": "스마트 케이블카 시스템으로 안전하고 효율적인 운영을 지원합니다."
+      }
+    },
+    "about": {
+      "title": "About 3H-Solutions",
+      "slogan": "\"첨단 기술로 미래를 향해 전진하는 기업\"",
+      "description": "3H-Solutions는 세 가지 핵심 가치를 바탕으로 AI 혁신을 선도합니다.",
+      "headway": {
+        "title": "Headway",
+        "description": "끊임없는 전진과 기술 발전을 통해 업계를 선도합니다"
+      },
+      "hightech": {
+        "title": "High-tech",
+        "description": "최첨단 AI 기술과 혁신적인 솔루션을 개발합니다"
+      },
+      "horizon": {
+        "title": "Horizon",
+        "description": "새로운 가능성을 탐구하며 글로벌 시장으로 확장합니다"
+      },
+      "stats": {
+        "innovation": "Innovation Leader",
+        "solutions": "Core Solutions",
+        "infinity": "Innovation"
+      }
+    },
+    "contact": {
+      "title": "Contact Us",
+      "subtitle": "궁금한 점이 있으시면 언제든 연락주세요",
+      "email": {
+        "title": "이메일"
+      },
+      "phone": {
+        "title": "전화"
+      },
+      "address": {
+        "title": "주소",
+        "content": "#416, Buildings C, Cwangmyeong TradeCenter,72<br>iljik-ro, Cwangmyeong-si Cyenggi-do<br>Republic of Korea"
+      }
+    }
+  },
+  "motorsports": {
+    "title": "차세대 모터스포츠 기술",
+    "subtitle": "데이터가 레이싱을 혁신합니다",
+    "description": "최첨단 센서 기술, AI 분석, 실시간 데이터 처리로 모터스포츠의 새로운 표준을 제시합니다. 경주용 차량의 모든 데이터를 실시간으로 분석하여 최적의 성능과 안전성을 동시에 확보하세요.",
+    "badges": {
+      "bigdata": "빅데이터 분석",
+      "customAI": "맞춤형 AI 모델",
+      "realtime": "실시간 피드백",
+      "prediction": "예측 알고리즘"
+    },
+    "services": {
+      "title": "3H-Solutions 핵심 서비스",
+      "service1": {
+        "title": "1. 모터스포츠 빅데이터 분석",
+        "subtitle": "F1급 데이터 수집 시스템",
+        "description": "엔진 텔레메트리, 타이어 압력/온도, 서스펜션 동작, 공기역학 데이터, GPS 위치정보, 드라이버 바이오메트릭 등 500개 이상의 센서에서 실시간으로 수집되는 데이터를 AI로 분석합니다.",
+        "features": {
+          "engine": "엔진 성능: RPM, 토크, 온도, 압력",
+          "tire": "타이어 분석: 마모도, 그립 레벨, 최적 압력",
+          "electric": "전기차 데이터: 배터리 상태, 에너지 회생",
+          "thermal": "열관리: 냉각 시스템, 브레이크 온도",
+          "telemetry": "텔레메트리: 실시간 무선 데이터 전송",
+          "prediction": "예측 분석: 랩타임, 전략 최적화",
+          "driver": "드라이버 분석: 심박수, 반응속도"
+        }
+      },
+      "service2": {
+        "title": "2. 실시간 AI 분석 및 전략 최적화",
+        "subtitle": "밀리초 단위 의사결정 지원",
+        "description": "실시간으로 수집되는 모든 데이터를 기반으로 AI가 즉시 분석하여 최적의 레이싱 전략을 제안합니다.",
+        "features": {
+          "realtime": "실시간 데이터 처리 (1000Hz 이상)",
+          "strategy": "레이스 전략 최적화",
+          "weather": "날씨 변화 대응 전략",
+          "fuel": "연료 소비 최적화",
+          "pitstop": "피트스톱 타이밍 분석",
+          "competitor": "경쟁 차량 분석",
+          "track": "트랙 조건 실시간 분석"
+        }
+      },
+      "service3": {
+        "title": "3. 안전성 모니터링 및 예측 시스템",
+        "subtitle": "사고 예방을 위한 AI 안전 시스템",
+        "description": "드라이버와 차량의 안전을 위해 실시간으로 위험 상황을 감지하고 예측하는 AI 시스템입니다.",
+        "features": {
+          "monitoring": "실시간 안전 모니터링",
+          "prediction": "사고 위험 예측",
+          "fatigue": "드라이버 피로도 감지",
+          "mechanical": "기계적 결함 조기 발견",
+          "emergency": "응급 상황 자동 대응",
+          "medical": "의료진 즉시 연락 시스템"
+        }
+      }
+    },
+    "technology": {
+      "title": "핵심 기술 스택",
+      "ai": {
+        "title": "AI/ML 엔진",
+        "description": "TensorFlow, PyTorch 기반 실시간 분석"
+      },
+      "data": {
+        "title": "빅데이터 처리",
+        "description": "Apache Kafka, Spark를 활용한 스트림 처리"
+      },
+      "cloud": {
+        "title": "클라우드 인프라",
+        "description": "AWS, Azure 멀티클라우드 환경"
+      },
+      "iot": {
+        "title": "IoT 센서",
+        "description": "고정밀 센서 네트워크 구축"
+      },
+      "visualization": {
+        "title": "실시간 시각화",
+        "description": "React, D3.js 기반 대시보드"
+      },
+      "edge": {
+        "title": "엣지 컴퓨팅",
+        "description": "차량 내 실시간 처리 시스템"
+      }
+    }
+  }
+}

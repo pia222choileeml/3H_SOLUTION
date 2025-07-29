@@ -1,0 +1,36 @@
+/* Multi-language CSS Solution */
+
+/* Default: Hide all language content */
+.lang-ko, .lang-en {
+    display: none !important;
+}
+
+/* Show Korean content when body has ko class */
+body.lang-ko .lang-ko {
+    display: inherit !important;
+}
+
+/* Show English content when body has en class */
+body.lang-en .lang-en {
+    display: inherit !important;
+}
+
+/* Language toggle buttons */
+.language-switcher {
+    position: relative;
+}
+
+.language-switcher .btn.active {
+    background-color: #007bff;
+    color: white;
+}
+
+/* Animation for language switching */
+.lang-ko, .lang-en {
+    transition: opacity 0.3s ease-in-out;
+}
+
+/* Fallback for when no language class is set - show Korean by default */
+body:not(.lang-ko):not(.lang-en) .lang-ko {
+    display: inherit !important;
+}

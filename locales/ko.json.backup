@@ -1,0 +1,315 @@
+{
+  "common": {
+    "company": "3H-Solutions",
+    "home": "홈",
+    "services": "서비스",
+    "about": "회사소개",
+    "contact": "연락처",
+    "language": "언어",
+    "korean": "한국어",
+    "english": "영어"
+  },
+  "nav": {
+    "sections": {
+      "aiIntelligence": "AI & Intelligence",
+      "industryApps": "Industry Applications"
+    },
+    "smartFactory": {
+      "title": "스마트 팩토리",
+      "desc": "AI 기반 스마트 팩토리 솔루션으로 생산성 혁신"
+    },
+    "llm": {
+      "title": "LLM",
+      "desc": "대화형 AI와 자연어 처리 기술"
+    },
+    "computerVision": {
+      "title": "컴퓨터 비전",
+      "desc": "첨단 컴퓨터 비전으로 품질 검사 자동화"
+    },
+    "carTuning": {
+      "title": "차량 튜닝",
+      "desc": "정밀한 ECU 튜닝과 차량 성능 최적화"
+    },
+    "motorsports": {
+      "title": "모터스포츠",
+      "desc": "레이싱 데이터 분석과 성능 모니터링"
+    },
+    "cableCar": {
+      "title": "케이블카",
+      "desc": "스마트 케이블카 시스템 운영 솔루션"
+    }
+  },
+  "footer": {
+    "privacy": "개인정보처리방침",
+    "terms": "이용약관",
+    "contact": "문의하기",
+    "copyright": "© 2024 3H-Solutions. All rights reserved."
+  },
+  "home": {
+    "title": "혁신적인 기술 솔루션",
+    "subtitle": "미래를 향한 기술 혁신",
+    "description": "3H-Solutions는 최첨단 기술을 활용하여 다양한 산업 분야에서 혁신적인 솔루션을 제공합니다. AI, IoT, 빅데이터 분석을 통해 고객의 비즈니스 성장을 지원합니다.",
+    "services": "주요 서비스",
+    "learnMore": "자세히 보기"
+  },
+  "index": {
+    "hero": {
+      "title": "첨단 기술로 미래를 향해<br>전진하는 기업",
+      "description": "AI 기술의 무한한 가능성을 통해 모든 산업 분야에서 혁신적인 변화를 이끌어내는 글로벌 기술 파트너입니다.",
+      "exploreBtn": "솔루션 살펴보기",
+      "contactBtn": "문의하기"
+    },
+    "solutions": {
+      "title": "Our Solutions",
+      "subtitle": "다양한 산업 분야에 특화된 AI 솔루션을 제공합니다",
+      "learnMore": "자세히 보기",
+      "smartFactory": {
+        "title": "Smart Factory",
+        "description": "AI 기반 스마트 팩토리 솔루션으로 생산성 향상과 품질 관리를 실현합니다."
+      },
+      "computerVision": {
+        "title": "Computer Vision",
+        "description": "첨단 컴퓨터 비전 기술로 품질 검사와 자동화를 혁신합니다."
+      },
+      "llm": {
+        "title": "LLM Solutions",
+        "description": "대화형 AI와 자연어 처리 기술로 비즈니스 혁신을 지원합니다."
+      },
+      "carTuning": {
+        "title": "Car Tuning",
+        "description": "정밀한 ECU 튜닝과 성능 최적화로 차량의 잠재력을 극대화합니다."
+      },
+      "motorsports": {
+        "title": "Motorsports",
+        "description": "레이싱 데이터 분석과 성능 모니터링으로 경쟁 우위를 확보합니다."
+      },
+      "cableCar": {
+        "title": "Cable Car Systems",
+        "description": "스마트 케이블카 시스템으로 안전하고 효율적인 운영을 지원합니다."
+      }
+    },
+    "about": {
+      "title": "About 3H-Solutions",
+      "slogan": "\"첨단 기술로 미래를 향해 전진하는 기업\"",
+      "description": "3H-Solutions는 세 가지 핵심 가치를 바탕으로 AI 혁신을 선도합니다.",
+      "headway": {
+        "title": "Headway",
+        "description": "끊임없는 전진과 기술 발전을 통해 업계를 선도합니다"
+      },
+      "hightech": {
+        "title": "High-tech",
+        "description": "최첨단 AI 기술과 혁신적인 솔루션을 개발합니다"
+      },
+      "horizon": {
+        "title": "Horizon",
+        "description": "새로운 가능성을 탐구하며 글로벌 시장으로 확장합니다"
+      },
+      "stats": {
+        "innovation": "Innovation Leader",
+        "solutions": "Core Solutions",
+        "infinity": "Innovation"
+      }
+    },
+    "contact": {
+      "title": "Contact Us",
+      "subtitle": "궁금한 점이 있으시면 언제든 연락주세요",
+      "email": {
+        "title": "이메일"
+      },
+      "phone": {
+        "title": "전화"
+      },
+      "address": {
+        "title": "주소",
+        "content": "#416, Buildings C, Cwangmyeong TradeCenter,72<br>iljik-ro, Cwangmyeong-si Cyenggi-do<br>Republic of Korea"
+      }
+    }
+  },
+  "motorsports": {
+    "title": "차세대 모터스포츠 기술",
+    "subtitle": "데이터가 레이싱을 혁신합니다",
+    "description": "최첨단 센서 기술, AI 분석, 실시간 데이터 처리로 모터스포츠의 새로운 표준을 제시합니다. 경주용 차량의 모든 데이터를 실시간으로 분석하여 최적의 성능과 안전성을 동시에 확보하세요.",
+    "badges": {
+      "bigdata": "빅데이터 분석",
+      "customAI": "맞춤형 AI 모델",
+      "realtime": "실시간 피드백",
+      "prediction": "예측 알고리즘"
+    },
+    "services": {
+      "title": "3H-Solutions 핵심 서비스",
+      "service1": {
+        "title": "1. 모터스포츠 빅데이터 분석",
+        "subtitle": "F1급 데이터 수집 시스템",
+        "description": "엔진 텔레메트리, 타이어 압력/온도, 서스펜션 동작, 공기역학 데이터, GPS 위치정보, 드라이버 바이오메트릭 등 500개 이상의 센서에서 실시간으로 수집되는 데이터를 AI로 분석합니다.",
+        "features": {
+          "engine": "엔진 성능: RPM, 토크, 온도, 압력",
+          "tire": "타이어 분석: 마모도, 그립 레벨, 최적 압력",
+          "electric": "전기차 데이터: 배터리 상태, 에너지 회생",
+          "thermal": "열관리: 냉각 시스템, 브레이크 온도",
+          "telemetry": "텔레메트리: 실시간 무선 데이터 전송",
+          "prediction": "예측 분석: 랩타임, 전략 최적화",
+          "driver": "드라이버 분석: 심박수, 반응속도"
+        }
+      },
+      "service2": {
+        "title": "2. 실시간 AI 분석 및 전략 최적화",
+        "subtitle": "밀리초 단위 의사결정 지원",
+        "description": "실시간으로 수집되는 모든 데이터를 기반으로 AI가 즉시 분석하여 최적의 레이싱 전략을 제안합니다.",
+        "features": {
+          "realtime": "실시간 데이터 처리 (1000Hz 이상)",
+          "strategy": "레이스 전략 최적화",
+          "weather": "날씨 변화 대응 전략",
+          "fuel": "연료 소비 최적화",
+          "pitstop": "피트스톱 타이밍 분석",
+          "competitor": "경쟁 차량 분석",
+          "track": "트랙 조건 실시간 분석"
+        }
+      },
+      "service3": {
+        "title": "3. 안전성 모니터링 및 예측 시스템",
+        "subtitle": "사고 예방을 위한 AI 안전 시스템",
+        "description": "드라이버와 차량의 안전을 위해 실시간으로 위험 상황을 감지하고 예측하는 AI 시스템입니다.",
+        "features": {
+          "monitoring": "실시간 안전 모니터링",
+          "prediction": "사고 위험 예측",
+          "fatigue": "드라이버 피로도 감지",
+          "mechanical": "기계적 결함 조기 발견",
+          "emergency": "응급 상황 자동 대응",
+          "medical": "의료진 즉시 연락 시스템"
+        }
+      }
+    },
+    "technology": {
+      "title": "핵심 기술 스택",
+      "ai": {
+        "title": "AI/ML 엔진",
+        "description": "TensorFlow, PyTorch 기반 실시간 분석"
+      },
+      "data": {
+        "title": "빅데이터 처리",
+        "description": "Apache Kafka, Spark를 활용한 스트림 처리"
+      },
+      "cloud": {
+        "title": "클라우드 인프라",
+        "description": "AWS, Azure 멀티클라우드 환경"
+      },
+      "iot": {
+        "title": "IoT 센서",
+        "description": "고정밀 센서 네트워크 구축"
+      },
+      "visualization": {
+        "title": "실시간 시각화",
+        "description": "React, D3.js 기반 대시보드"
+      },
+      "edge": {
+        "title": "엣지 컴퓨팅",
+        "description": "차량 내 실시간 처리 시스템"
+      }
+    }
+  },
+  "carTuning": {
+    "title": "고급 차량 튜닝 솔루션",
+    "description": "AI 기반 ECU 최적화, 정밀 엔진 매핑, 고급 데이터 분석으로 차량 성능을 혁신하세요. 첨단 튜닝 솔루션으로 신뢰성과 배출가스 규정 준수를 유지하면서 측정 가능한 성능 향상을 제공합니다."
+  },
+  "smartFactory": {
+    "title": "스마트 팩토리 솔루션",
+    "description": "AI와 IoT 기술을 활용한 차세대 스마트 팩토리로 생산성을 혁신하세요."
+  },
+  "llm": {
+    "intro": "<strong>첨단 AI 기술로 미래를 선도하는 3H-Solutions</strong><br>최첨단 대규모 언어 모델(LLM) 기술을 활용하여 비즈니스 혁신을 실현합니다. 퀀텀 트레이딩부터 AI 면접, RAG 서비스까지 다양한 분야에서 차별화된 AI 솔루션을 제공합니다.",
+    "badge1": "퀀텀 트레이딩",
+    "badge2": "AI 면접 서비스",
+    "badge3": "LLM 협업 툴",
+    "badge4": "환각 방지",
+    "service1Title": "맞춤형 모델 개발",
+    "service1Desc": "기업 특화 요구사항에 맞춘 고성능 LLM을 개발하여 최적의 성능을 보장합니다.",
+    "service2Title": "통합 & 배포",
+    "service2Desc": "기존 시스템과 완벽하게 통합하여 업무 효율성과 생산성을 극대화하는 LLM 솔루션을 제공합니다.",
+    "service3Title": "성능 최적화",
+    "service3Desc": "실제 운영 환경에서 최고의 정확도와 응답성을 보장하는 LLM 파인튜닝 및 최적화를 제공합니다.",
+    "usecase1Title": "주식분석 및 투자 추천",
+    "usecase1Desc": "퀀텀 트레이딩 기술을 활용한 AI 기반 주식 시장 분석으로 최신 투자 인사이트와 개인 맞춤형 트레이딩 추천을 제공합니다. 머신러닝 알고리즘이 시장 패턴을 학습하여 높은 확률의 투자 기회를 제시합니다.",
+    "usecase1Badge1": "시장분석",
+    "usecase1Badge2": "머신러닝 알고리즘",
+    "usecase1Badge3": "위험 관리",
+    "usecase2Title": "AI 면접 및 인재 평가",
+    "usecase2Desc": "첨단 자연어처리와 감정 인식 기술을 활용한 AI 면접 솔루션으로 객관적이고 공정한 인재 평가를 실현합니다. 실시간 성향 분석과 행동 패턴 인식을 통해 최적의 인재를 선별합니다.",
+    "usecase2Badge1": "성향 분석",
+    "usecase2Badge2": "감정 인식",
+    "usecase2Badge3": "객관적 평가",
+    "usecase3Title": "LLM 기반 협업 플랫폼",
+    "usecase3Desc": "다양한 협업 분야에 특화된 맞춤형 LLM 솔루션을 제공합니다. 기업 지식관리, 자동 문서 생성, 고객 서비스 자동화 등 업무 효율성을 극대화하는 통합 AI 협업 환경을 구축합니다.",
+    "usecase3Badge1": "맞춤형 AI",
+    "usecase3Badge2": "업무 자동화",
+    "usecase3Badge3": "통합 협업",
+    "usecase4Title": "RAG 서비스 및 환각 방지",
+    "usecase4Desc": "Retrieval-Augmented Generation(RAG) 기술을 통해 AI 모델의 환각(Hallucination) 현상을 방지하고, 정확하고 신뢰할 수 있는 정보 제공을 보장합니다. 최신 지식 기반으로 최적의 답변을 생성합니다.",
+    "usecase4Badge1": "환각 방지",
+    "usecase4Badge2": "정확성 향상",
+    "usecase4Badge3": "지식 검증"
+  },
+  "cableCar": {
+    "title": "케이블카 시스템",
+    "subtitle": "안전하고 효율적인 도시 및 관광용 교통 솔루션",
+    "intro": "우리의 케이블카 시스템은 안전성, 효율성, 신뢰성을 고려하여 설계되어 도시 및 관광 교통을 위한 혁신적인 솔루션을 제공합니다.",
+    "technology": {
+      "title": "기술 및 솔루션",
+      "description": "우리는 분리형 곤돌라, 고정 그립 시스템, 가역 공중 트램웨이 등 다양한 케이블카 기술을 제공합니다. 우리의 솔루션은 각 프로젝트의 특정 요구 사항에 맞게 맞춤화되어 최적의 성능과 승객 편의성을 보장합니다."
+    },
+    "installations": {
+      "title": "설치 사례",
+      "urbanTransit": {
+        "title": "도시 교통 시스템",
+        "description": "도시의 대중교통 네트워크에 통합된 케이블카 시스템"
+      },
+      "mountainResort": {
+        "title": "산악 리조트 곤돌라",
+        "description": "산악 리조트에 접근할 수 있는 곤돌라 시스템"
+      },
+      "scenicTramway": {
+        "title": "경관 공중 트램웨이",
+        "description": "경관 지역의 파노라마 전망을 제공하는 공중 트램웨이"
+      }
+    },
+    "safety": {
+      "title": "안전 및 운영",
+      "description": "우리의 케이블카 시스템은 최고의 안전 기준을 준수하며, 첨단 모니터링 및 제어 시스템을 통합합니다. 안전하고 효율적인 운영을 보장하기 위해 포괄적인 교육과 지원을 제공합니다."
+    }
+  },
+  "smartFactory": {
+    "title": "스마트 팩토리",
+    "subtitle": "AI 기반 제조업 혁신 솔루션",
+    "intro": "첨단 AI와 IoT 기술을 활용하여 제조 공정을 혁신하고 생산성을 극대화하는 스마트 팩토리 솔루션을 제공합니다.",
+    "technology": {
+      "title": "기술 및 솔루션",
+      "description": "우리는 AI 기반 품질 관리, 예측 유지보수, 실시간 생산 모니터링 등의 혁신적인 기술을 제공합니다. 각 제조업체의 특정 요구사항에 맞춘 맞춤형 솔루션으로 최적의 효율성을 달성합니다."
+    }
+  },
+  "computerVision": {
+    "title": "컴퓨터 비전",
+    "subtitle": "첨단 비전 기술로 품질 검사 자동화",
+    "intro": "최신 컴퓨터 비전 및 이미지 처리 기술을 활용하여 제조업, 의료, 보안 등 다양한 분야에서 정확하고 효율적인 자동화 솔루션을 제공합니다.",
+    "technology": {
+      "title": "기술 및 솔루션",
+      "description": "딥러닝 기반 이미지 분석, 실시간 결함 탐지, 자동 품질 검사 시스템 등을 통해 인간의 시각적 능력을 뛰어넘는 정확성과 속도를 제공합니다."
+    }
+  },
+  "carTuning": {
+    "title": "차량 튜닝",
+    "subtitle": "정밀한 ECU 튜닝과 성능 최적화",
+    "intro": "첨단 기술과 정밀한 데이터 분석을 통해 차량의 잠재력을 최대한 발휘할 수 있는 맞춤형 튜닝 솔루션을 제공합니다.",
+    "technology": {
+      "title": "기술 및 솔루션",
+      "description": "ECU 리맵핑, 성능 모니터링, 실시간 데이터 분석을 통해 차량의 파워, 토크, 연비를 최적화하여 드라이버가 원하는 성능을 구현합니다."
+    }
+  },
+  "motorsports": {
+    "title": "모터스포츠",
+    "subtitle": "레이싱 데이터 분석과 성능 모니터링",
+    "intro": "첨단 센서 기술과 AI 분석을 통해 레이싱 데이터를 실시간으로 수집하고 분석하여 최적의 성능과 안전성을 동시에 달성하는 모터스포츠 기술을 제시합니다.",
+    "technology": {
+      "title": "기술 및 솔루션",
+      "description": "F1급 데이터 수집 시스템을 통해 500개 이상의 센서에서 수집되는 데이터를 AI로 분석하여 최적의 레이싱 전략과 차량 세팅을 제공합니다."
+    }
+  }
+}

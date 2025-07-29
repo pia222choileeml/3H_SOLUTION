@@ -7,10 +7,62 @@
     <link href="data:image/x-icon;base64," rel="icon" type="image/x-icon"/>
     <link crossorigin="" href="https://fonts.gstatic.com/" rel="preconnect"/>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&display=swap" rel="stylesheet"/>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous"/>
+    <link href="components/bootstrap.min.css" rel="stylesheet"/>
     <link href="components/common-styles.css" rel="stylesheet"/>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    <style>
+        /* LLM 페이지 특별 스타일 */
+        .card {
+            transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+        }
+        
+        .card:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+        }
+        
+        /* Use Case 섹션 이미지 정렬 개선 */
+        .use-case-img {
+            max-height: 250px;
+            width: auto;
+            object-fit: contain;
+        }
+        
+        /* 텍스트와 이미지 수직 정렬 보장 */
+        .align-items-center {
+            align-items: center !important;
+        }
+        
+        /* 반응형 이미지 컨테이너 */
+        .img-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 200px;
+        }
+        
+        /* 모바일에서 이미지 크기 조정 */
+        @media (max-width: 768px) {
+            .use-case-img {
+                max-height: 200px;
+                max-width: 100%;
+            }
+            
+            .img-container {
+                min-height: 150px;
+                margin-bottom: 1rem;
+            }
+        }
+        
+        /* 배지 스타일 개선 */
+        .badge {
+            font-size: 0.8em;
+            padding: 0.5em 0.8em;
+        }
+    </style>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
+    <script src="components/bootstrap.min.js"></script>
     <script src="components/common.js"></script>
+    <script src="components/i18n.js"></script>
 </head>
 <body>
     <!-- Navigation Bar Placeholder -->
@@ -20,9 +72,13 @@
         <div class="container py-5">
             <section class="text-center mb-5">
                 <h1 class="display-4 fw-bold mb-4 text-primary-custom">Large Language Models (LLMs)</h1>
-                <p class="lead text-secondary-custom mx-auto" style="max-width: 600px;">
-                    Unlock the power of advanced AI with our LLM solutions. We provide cutting-edge technology to transform your business operations and drive innovation.
-                </p>
+                <p class="lead text-secondary-custom mx-auto" style="max-width: 700px;" data-i18n="llm.intro"></p>
+                <div class="d-flex justify-content-center gap-3 flex-wrap mt-4">
+                    <span class="badge bg-primary px-3 py-2" data-i18n="llm.badge1"></span>
+                    <span class="badge bg-secondary px-3 py-2" data-i18n="llm.badge2"></span>
+                    <span class="badge bg-success px-3 py-2" data-i18n="llm.badge3"></span>
+                    <span class="badge bg-warning px-3 py-2" data-i18n="llm.badge4"></span>
+                </div>
             </section>
 
             <section class="mb-5">
@@ -36,8 +92,8 @@
                                         <path d="M200,48H136V16a8,8,0,0,0-16,0V48H56A32,32,0,0,0,24,80V192a32,32,0,0,0,32,32H200a32,32,0,0,0,32-32V80A32,32,0,0,0,200,48Zm16,144a16,16,0,0,1-16,16H56a16,16,0,0,1-16-16V80A16,16,0,0,1,56,64H200a16,16,0,0,1,16,16Zm-52-56H92a28,28,0,0,0,0,56h72a28,28,0,0,0,0-56Zm-28,16v24H120V152ZM80,164a12,12,0,0,1,12-12h12v24H92A12,12,0,0,1,80,164Zm84,12H152V152h12a12,12,0,0,1,0,24ZM72,108a12,12,0,1,1,12,12A12,12,0,0,1,72,108Zm88,0a12,12,0,1,1,12,12A12,12,0,0,1,160,108Z"></path>
                                     </svg>
                                 </div>
-                                <h5 class="card-title fw-bold">Custom Model Development</h5>
-                                <p class="card-text text-secondary-custom">We build tailored LLMs to meet your specific business needs, ensuring optimal performance and scalability.</p>
+                                <h5 class="card-title fw-bold" data-i18n="llm.service1Title"></h5>
+                                <p class="card-text text-secondary-custom" data-i18n="llm.service1Desc"></p>
                             </div>
                         </div>
                     </div>
@@ -49,8 +105,8 @@
                                         <path d="M69.12,94.15,28.5,128l40.62,33.85a8,8,0,1,1-10.24,12.29l-48-40a8,8,0,0,1,0-12.29l48-40a8,8,0,0,1,10.24,12.3Zm176,27.7-48-40a8,8,0,1,0-10.24,12.3L227.5,128l-40.62,33.85a8,8,0,1,0,10.24,12.29l48-40a8,8,0,0,0,0-12.29ZM162.73,32.48a8,8,0,0,0-10.25,4.79l-64,176a8,8,0,0,0,4.79,10.26A8.14,8.14,0,0,0,96,224a8,8,0,0,0,7.52-5.27l64-176A8,8,0,0,0,162.73,32.48Z"></path>
                                     </svg>
                                 </div>
-                                <h5 class="card-title fw-bold">Integration & Deployment</h5>
-                                <p class="card-text text-secondary-custom">Seamlessly integrate LLMs into your existing systems and workflows for enhanced efficiency and productivity.</p>
+                                <h5 class="card-title fw-bold" data-i18n="llm.service2Title"></h5>
+                                <p class="card-text text-secondary-custom" data-i18n="llm.service2Desc"></p>
                             </div>
                         </div>
                     </div>
@@ -62,8 +118,8 @@
                                         <path d="M229.66,218.34l-50.07-50.06a88.11,88.11,0,1,0-11.31,11.31l50.06,50.07a8,8,0,0,0,11.32-11.32ZM40,112a72,72,0,1,1,72,72A72.08,72.08,0,0,1,40,112Z"></path>
                                     </svg>
                                 </div>
-                                <h5 class="card-title fw-bold">Performance Optimization</h5>
-                                <p class="card-text text-secondary-custom">Fine-tune and optimize LLMs for peak performance, ensuring accuracy and responsiveness in real-world applications.</p>
+                                <h5 class="card-title fw-bold" data-i18n="llm.service3Title"></h5>
+                                <p class="card-text text-secondary-custom" data-i18n="llm.service3Desc"></p>
                             </div>
                         </div>
                     </div>
@@ -81,8 +137,8 @@
                                         <path d="M116,176a8,8,0,0,1-8,8H80a8,8,0,0,1,0-16h28A8,8,0,0,1,116,176Zm60-8H148a8,8,0,0,0,0,16h28a8,8,0,0,0,0-16Zm72,48a8,8,0,0,1-8,8H16a8,8,0,0,1,0-16H32V88a8,8,0,0,1,12.8-6.4L96,120V88a8,8,0,0,1,12.8-6.4l38.74,29.05L159.1,29.74A16.08,16.08,0,0,1,174.94,16h18.12A16.08,16.08,0,0,1,208.9,29.74l15,105.13s.08.78.08,1.13v72h16A8,8,0,0,1,248,216Zm-85.86-94.4,8.53,6.4h36.11L193.06,32H174.94ZM48,208H208V144H168a8,8,0,0,1-4.8-1.6l-14.4-10.8,0,0L112,104v32a8,8,0,0,1-12.8,6.4L48,104Z"></path>
                                     </svg>
                                 </div>
-                                <h5 class="card-title fw-bold">Smart Factory Automation</h5>
-                                <p class="card-text text-secondary-custom">Enhance factory efficiency and productivity with AI-powered automation and predictive maintenance.</p>
+                                <h5 class="card-title fw-bold" data-i18n="llm.industryApp1.title">Smart Factory Automation</h5>
+                                <p class="card-text text-secondary-custom" data-i18n="llm.industryApp1.description">Enhance factory efficiency and productivity with AI-powered automation and predictive maintenance.</p>
                             </div>
                         </div>
                     </div>
@@ -94,8 +150,8 @@
                                         <path d="M240,112H229.2L201.42,49.5A16,16,0,0,0,186.8,40H69.2a16,16,0,0,0-14.62,9.5L26.8,112H16a8,8,0,0,0,0,16h8v80a16,16,0,0,0,16,16H64a16,16,0,0,0,16-16V192h96v16a16,16,0,0,0,16,16h24a16,16,0,0,0,16-16V128h8a8,8,0,0,0,0-16ZM69.2,56H186.8l24.89,56H44.31ZM64,208H40V192H64Zm128,0V192h24v16Zm24-32H40V128H216ZM56,152a8,8,0,0,1,8-8H80a8,8,0,0,1,0,16H64A8,8,0,0,1,56,152Zm112,0a8,8,0,0,1,8-8h16a8,8,0,0,1,0,16H176A8,8,0,0,1,168,152Z"></path>
                                     </svg>
                                 </div>
-                                <h5 class="card-title fw-bold">Advanced Car Tuning</h5>
-                                <p class="card-text text-secondary-custom">Optimize vehicle performance and handling with AI-driven tuning solutions.</p>
+                                <h5 class="card-title fw-bold" data-i18n="llm.industryApp2.title">Advanced Car Tuning</h5>
+                                <p class="card-text text-secondary-custom" data-i18n="llm.industryApp2.description">Optimize vehicle performance and handling with AI-driven tuning solutions.</p>
                             </div>
                         </div>
                     </div>
@@ -107,8 +163,8 @@
                                         <path d="M184,48H136V24h32a8,8,0,0,0,0-16H88a8,8,0,0,0,0,16h32V48H72A32,32,0,0,0,40,80V184a32,32,0,0,0,32,32h8L65.6,235.2a8,8,0,1,0,12.8,9.6L100,216h56l21.6,28.8a8,8,0,1,0,12.8-9.6L176,216h8a32,32,0,0,0,32-32V80A32,32,0,0,0,184,48ZM72,64H184a16,16,0,0,1,16,16v40H56V80A16,16,0,0,1,72,64ZM184,200H72a16,16,0,0,1-16-16V136H200v48A16,16,0,0,1,184,200ZM96,172a12,12,0,1,1-12-12A12,12,0,0,1,96,172Zm88,0a12,12,0,1,1-12-12A12,12,0,0,1,184,172Z"></path>
                                     </svg>
                                 </div>
-                                <h5 class="card-title fw-bold">Cable Car Management</h5>
-                                <p class="card-text text-secondary-custom">Improve safety and operational efficiency in cable car systems with real-time monitoring and control.</p>
+                                <h5 class="card-title fw-bold" data-i18n="llm.industryApp3.title">Cable Car Management</h5>
+                                <p class="card-text text-secondary-custom" data-i18n="llm.industryApp3.description">Improve safety and operational efficiency in cable car systems with real-time monitoring and control.</p>
                             </div>
                         </div>
                     </div>
@@ -116,67 +172,107 @@
             </section>
             <section class="mb-5">
                 <h2 class="h2 fw-bold mb-4 text-center">Use Cases</h2>
+                
+                <!-- 주식분석 및 추천 -->
                 <div class="row mb-4">
                     <div class="col-12">
                         <div class="card">
                             <div class="card-body">
-                                <div class="row align-items-center">
+                                <div class="row align-items-center g-4">
                                     <div class="col-md-7">
-                                        <p class="text-primary-custom small fw-bold mb-1">MANUFACTURING</p>
-                                        <h4 class="fw-bold mb-3">Predictive Maintenance</h4>
-                                        <p class="text-secondary-custom">Reduce downtime and maintenance costs by predicting equipment failures with AI-powered analytics.</p>
-                                    </div>
-                                    <div class="col-md-5">
-                                        <img src="images/manufacturing.jpg" class="img-fluid rounded" alt="Manufacturing">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="row mb-4">
-                    <div class="col-12">
-                        <div class="card">
-                            <div class="card-body">
-                                <div class="row align-items-center">
-                                    <div class="col-md-5 order-md-1">
-                                        <div class="bg-secondary rounded d-flex align-items-center justify-content-center" style="height: 200px;">
-                                            <div class="text-white text-center">
-                                                <svg fill="currentColor" height="48" viewBox="0 0 256 256" width="48" xmlns="http://www.w3.org/2000/svg">
-                                                    <path d="M240,120h-8.88l-36.44-36.44A16,16,0,0,0,183.31,80H168V52a12,12,0,0,0-12-12H100A12,12,0,0,0,88,52V80H72.69a16,16,0,0,0-11.31,4.69L24.88,120H16a8,8,0,0,0,0,16H32.58A16,16,0,0,0,40,152h4v32a8,8,0,0,0,8,8H64a8,8,0,0,0,8-8V152h112v32a8,8,0,0,0,8,8h12a8,8,0,0,0,8-8V152h4a16,16,0,0,0,7.42-16H240a8,8,0,0,0,0-16ZM104,56h48V80H104ZM75.31,96H180.69l24,24H51.31Z"/>
-                                                </svg>
-                                                <p class="mt-2 mb-0 small">Automotive</p>
-                                            </div>
+                                        <p class="text-primary-custom small fw-bold mb-1">FINANCIAL TECHNOLOGY</p>
+                                        <h4 class="fw-bold mb-3" data-i18n="llm.usecase1Title">퀀트 트레딩 주식분석</h4>
+                                        <p class="text-secondary-custom" data-i18n="llm.usecase1Desc">고급 알고리즘과 머신러닝을 활용한 주식 시장 분석 및 투자 추천 시스템</p>
+                                        <div class="d-flex gap-2 flex-wrap">
+                                            <span class="badge bg-primary" data-i18n="llm.usecase1Badge1">데이터 분석</span>
+                                            <span class="badge bg-primary" data-i18n="llm.usecase1Badge2">위험 관리</span>
+                                            <span class="badge bg-primary" data-i18n="llm.usecase1Badge3">자동 거래</span>
                                         </div>
                                     </div>
-                                    <div class="col-md-7 order-md-2">
-                                        <p class="text-primary-custom small fw-bold mb-1">AUTOMOTIVE</p>
-                                        <h4 class="fw-bold mb-3">Personalized Driving Experience</h4>
-                                        <p class="text-secondary-custom">Tailor vehicle performance and settings to individual driver preferences using AI.</p>
+                                    <div class="col-md-5">
+                                        <div class="img-container">
+                                            <img src="images/quantum-trading.png" class="img-fluid rounded shadow-sm use-case-img" alt="퀀트 트레딩 주식분석">
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
+
+                <!-- AI 면접 시스템 -->
                 <div class="row mb-4">
                     <div class="col-12">
                         <div class="card">
                             <div class="card-body">
-                                <div class="row align-items-center">
+                                <div class="row align-items-center g-4">
+                                    <div class="col-md-5">
+                                        <div class="img-container">
+                                            <img src="images/ai-interview.png" class="img-fluid rounded shadow-sm use-case-img" alt="AI 면접 시스템">
+                                        </div>
+                                    </div>
                                     <div class="col-md-7">
-                                        <p class="text-primary-custom small fw-bold mb-1">TRANSPORTATION</p>
-                                        <h4 class="fw-bold mb-3">Real-Time Monitoring</h4>
-                                        <p class="text-secondary-custom">Ensure safety and efficiency in cable car operations with AI-driven real-time monitoring and control.</p>
+                                        <p class="text-primary-custom small fw-bold mb-1">HUMAN RESOURCES</p>
+                                        <h4 class="fw-bold mb-3" data-i18n="llm.usecase2Title">AI 면접 시스템</h4>
+                                        <p class="text-secondary-custom" data-i18n="llm.usecase2Desc">인공지능 기반 면접 진행 및 평가 시스템으로 공정하고 효율적인 채용 프로세스 구현</p>
+                                        <div class="d-flex gap-2 flex-wrap">
+                                            <span class="badge bg-secondary" data-i18n="llm.usecase2Badge1">자동 평가</span>
+                                            <span class="badge bg-secondary" data-i18n="llm.usecase2Badge2">음성 인식</span>
+                                            <span class="badge bg-secondary" data-i18n="llm.usecase2Badge3">행동 분석</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- LLM 협업 도구 -->
+                <div class="row mb-4">
+                    <div class="col-12">
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="row align-items-center g-4">
+                                    <div class="col-md-7">
+                                        <p class="text-primary-custom small fw-bold mb-1">ENTERPRISE COLLABORATION</p>
+                                        <h4 class="fw-bold mb-3" data-i18n="llm.usecase3Title">LLM 협업 도구</h4>
+                                        <p class="text-secondary-custom" data-i18n="llm.usecase3Desc">팀 간 효율적인 소통과 협업을 위한 AI 기반 협업 플랫폼</p>
+                                        <div class="d-flex gap-2 flex-wrap">
+                                            <span class="badge bg-success" data-i18n="llm.usecase3Badge1">실시간 번역</span>
+                                            <span class="badge bg-success" data-i18n="llm.usecase3Badge2">문서 요약</span>
+                                            <span class="badge bg-success" data-i18n="llm.usecase3Badge3">프로젝트 관리</span>
+                                        </div>
                                     </div>
                                     <div class="col-md-5">
-                                        <div class="bg-secondary rounded d-flex align-items-center justify-content-center" style="height: 200px;">
-                                            <div class="text-white text-center">
-                                                <svg fill="currentColor" height="48" viewBox="0 0 256 256" width="48" xmlns="http://www.w3.org/2000/svg">
-                                                    <path d="M240,168a8,8,0,0,1-8,8H24a8,8,0,0,1-8-8V88a8,8,0,0,1,8-8H232a8,8,0,0,1,8,8Zm-8-72H24V96H232Z"/>
-                                                </svg>
-                                                <p class="mt-2 mb-0 small">Transportation</p>
-                                            </div>
+                                        <div class="img-container">
+                                            <img src="images/llm-collaboration.png" class="img-fluid rounded shadow-sm use-case-img" alt="LLM 협업 도구">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- RAG 시스템 -->
+                <div class="row mb-4">
+                    <div class="col-12">
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="row align-items-center g-4">
+                                    <div class="col-md-5">
+                                        <div class="img-container">
+                                            <img src="images/RAG.png" class="img-fluid rounded shadow-sm use-case-img" alt="RAG 시스템">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-7">
+                                        <p class="text-primary-custom small fw-bold mb-1">AI RELIABILITY</p>
+                                        <h4 class="fw-bold mb-3" data-i18n="llm.usecase4Title">RAG 시스템</h4>
+                                        <p class="text-secondary-custom" data-i18n="llm.usecase4Desc">검색 증강 생성(RAG) 기술로 더욱 정확하고 신뢰할 수 있는 AI 응답 시스템</p>
+                                        <div class="d-flex gap-2 flex-wrap">
+                                            <span class="badge bg-warning" data-i18n="llm.usecase4Badge1">정확성 향상</span>
+                                            <span class="badge bg-warning" data-i18n="llm.usecase4Badge2">실시간 검색</span>
+                                            <span class="badge bg-warning" data-i18n="llm.usecase4Badge3">할루시네이션 방지</span>
                                         </div>
                                     </div>
                                 </div>
@@ -189,5 +285,38 @@
     </main>
     <!-- Footer Placeholder -->
     <div id="footer-placeholder"></div>
+    <!-- I18n Initialization -->
+    <script>
+        document.addEventListener('DOMContentLoaded', async function() {
+            try {
+                window.i18n = new I18n();
+                await window.i18n.init();
+                
+                const observer = new MutationObserver(function(mutations) {
+                    mutations.forEach(function(mutation) {
+                        if (mutation.type === 'childList' && mutation.addedNodes.length > 0) {
+                            setTimeout(() => {
+                                if (window.i18n) window.i18n.updatePage();
+                            }, 100);
+                        }
+                    });
+                });
+                
+                const navbarPlaceholder = document.getElementById('navbar-placeholder');
+                const footerPlaceholder = document.getElementById('footer-placeholder');
+                
+                if (navbarPlaceholder) {
+                    observer.observe(navbarPlaceholder, { childList: true, subtree: true });
+                }
+                if (footerPlaceholder) {
+                    observer.observe(footerPlaceholder, { childList: true, subtree: true });
+                }
+            } catch (error) {
+                console.error('Error initializing i18n:', error);
+            }
+        });
+    </script>
 </body>
 </html>
+
+

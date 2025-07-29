@@ -1,5 +1,8 @@
 {
   "projects": {
-    "default": "h-solutions-website"
-  }
+    "default": "h-solutions-beaa9",
+    "3hs": "h-solutions-beaa9"
+  },
+  "targets": {},
+  "etags": {}
 }

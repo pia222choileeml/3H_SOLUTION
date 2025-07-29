@@ -1,0 +1,504 @@
+{
+  "common": {
+    "company": "3H-Solutions",
+    "home": "Home",
+    "services": "Services",
+    "about": "About",
+    "contact": "Contact",
+    "language": "Language",
+    "korean": "한국어",
+    "english": "English"
+  },
+  "nav": {
+    "services": "Services",
+    "solutions": "Solutions",
+    "company": "Company",
+    "sections": {
+      "aiIntelligence": "AI & Intelligence",
+      "industryApps": "Industry Applications"
+    },
+    "smartFactory": {
+      "title": "Smart Factory",
+      "desc": "AI-based smart factory solutions for productivity innovation"
+    },
+    "llm": {
+      "title": "LLM Solutions",
+      "desc": "Conversational AI and natural language processing technology"
+    },
+    "computerVision": {
+      "title": "Computer Vision",
+      "desc": "Advanced computer vision for automated quality inspection"
+    },
+    "carTuning": {
+      "title": "Car Tuning",
+      "desc": "Precise ECU tuning and vehicle performance optimization"
+    },
+    "motorsports": {
+      "title": "Motorsports",
+      "desc": "Racing data analysis and performance monitoring"
+    },
+    "cableCar": {
+      "title": "Cable Car Systems",
+      "desc": "Smart cable car system operation solutions"
+    }
+  },
+  "megaMenu": {
+    "services": {
+      "ai": {
+        "title": "AI & Intelligence",
+        "smartFactory": "Smart Factory",
+        "llm": "LLM Solutions",
+        "vision": "Computer Vision"
+      },
+      "industry": {
+        "title": "Industry Applications",
+        "tuning": "Car Tuning",
+        "motorsports": "Motorsports",
+        "cablecar": "Cable Car Systems"
+      },
+      "consulting": {
+        "title": "Consulting Services",
+        "digital": "Digital Transformation",
+        "automation": "Automation Consulting",
+        "optimization": "Process Optimization"
+      }
+    },
+    "solutions": {
+      "core": {
+        "title": "Core Solutions",
+        "manufacturing": "Manufacturing Innovation",
+        "ai": "AI Platform",
+        "quality": "Quality Management"
+      },
+      "specialized": {
+        "title": "Specialized Solutions",
+        "automotive": "Automotive Industry",
+        "racing": "Racing Technology",
+        "transport": "Transportation Systems"
+      },
+      "support": {
+        "title": "Support Services",
+        "training": "Training Programs",
+        "maintenance": "Maintenance",
+        "upgrade": "Upgrades"
+      }
+    },
+    "company": {
+      "about": {
+        "title": "Company Info",
+        "overview": "Company Overview",
+        "history": "History",
+        "vision": "Vision"
+      },
+      "team": {
+        "title": "Team & People",
+        "leadership": "Leadership",
+        "careers": "Careers",
+        "culture": "Corporate Culture"
+      },
+      "contact": {
+        "title": "Contact",
+        "info": "Contact Info",
+        "location": "Location",
+        "inquiry": "Inquiry"
+      }
+    }
+  },
+  "footer": {
+    "privacy": "Privacy Policy",
+    "terms": "Terms of Service",
+    "contact": "Contact Us",
+    "copyright": "© 2024 3H-Solutions. All rights reserved."
+  },
+  "index": {
+    "hero": {
+      "title": "Advanced Technology Company<br>Moving Forward to the Future",
+      "description": "We are a global technology partner that drives innovative changes across all industries through the infinite possibilities of AI technology.",
+      "exploreBtn": "Explore Solutions",
+      "contactBtn": "Contact Us"
+    },
+    "solutions": {
+      "title": "Our Solutions",
+      "subtitle": "We provide AI solutions specialized for various industries",
+      "learnMore": "Learn More",
+      "smartFactory": {
+        "title": "Smart Factory",
+        "description": "Achieve productivity improvement and quality management with AI-based smart factory solutions."
+      },
+      "computerVision": {
+        "title": "Computer Vision",
+        "description": "Revolutionize quality inspection and automation with advanced computer vision technology."
+      },
+      "llm": {
+        "title": "LLM Solutions",
+        "description": "Support business innovation with conversational AI and natural language processing technology."
+      },
+      "carTuning": {
+        "title": "Car Tuning",
+        "description": "Maximize vehicle potential with precise ECU tuning and performance optimization."
+      },
+      "motorsports": {
+        "title": "Motorsports",
+        "description": "Gain competitive advantage through racing data analysis and performance monitoring."
+      },
+      "cableCar": {
+        "title": "Cable Car Systems",
+        "description": "Support safe and efficient operations with smart cable car systems."
+      }
+    },
+    "about": {
+      "title": "About 3H-Solutions",
+      "slogan": "\"Advanced Technology Company Moving Forward to the Future\"",
+      "description": "3H-Solutions leads AI innovation based on three core values.",
+      "headway": {
+        "title": "Headway",
+        "description": "Leading the industry through continuous progress and technological advancement"
+      },
+      "hightech": {
+        "title": "High-tech",
+        "description": "Developing cutting-edge AI technology and innovative solutions"
+      },
+      "horizon": {
+        "title": "Horizon",
+        "description": "Exploring new possibilities and expanding into global markets"
+      },
+      "stats": {
+        "innovation": "Innovation Leader",
+        "solutions": "Core Solutions",
+        "infinity": "Innovation"
+      }
+    },
+    "contact": {
+      "title": "Contact Us",
+      "subtitle": "Feel free to contact us if you have any questions",
+      "email": {
+        "title": "Email"
+      },
+      "phone": {
+        "title": "Phone"
+      },
+      "address": {
+        "title": "Address",
+        "content": "#416, Buildings C, Cwangmyeong TradeCenter,72<br>iljik-ro, Cwangmyeong-si Cyenggi-do<br>Republic of Korea"
+      }
+    }
+  },
+  "llm": {
+    "intro": "Revolutionize natural language understanding and generation with large language models, providing intelligent solutions across various business domains.",
+    "badge1": "Quantum Trading",
+    "badge2": "AI Interview Service",
+    "badge3": "LLM Collaboration Tools",
+    "badge4": "Hallucination Prevention",
+    "service1Title": "Custom Model Development",
+    "service1Desc": "Develop high-performance LLMs tailored to enterprise-specific requirements, ensuring optimal performance.",
+    "service2Title": "Integration & Deployment",
+    "service2Desc": "Provide LLM solutions that integrate seamlessly with existing systems to maximize work efficiency and productivity.",
+    "service3Title": "Performance Optimization",
+    "service3Desc": "Provide LLM fine-tuning and optimization that ensures the highest accuracy and responsiveness in real operating environments.",
+    "usecase1Title": "Stock Analysis and Investment Recommendations",
+    "usecase1Desc": "AI-based stock market analysis using quantum trading technology provides the latest investment insights and personalized trading recommendations.",
+    "usecase1Badge1": "Market Analysis",
+    "usecase1Badge2": "Machine Learning Algorithms",
+    "usecase1Badge3": "Risk Management",
+    "usecase2Title": "AI Interview and Talent Assessment",
+    "usecase2Desc": "AI interview solutions using advanced natural language processing and emotion recognition technology realize objective and fair talent assessment.",
+    "usecase2Badge1": "Personality Analysis",
+    "usecase2Badge2": "Emotion Recognition",
+    "usecase2Badge3": "Objective Assessment",
+    "usecase3Title": "LLM-based Collaboration Platform",
+    "usecase3Desc": "Provide customized LLM solutions specialized for various collaboration fields. Implement corporate knowledge management, automatic document generation, customer service automation, etc.",
+    "usecase3Badge1": "Custom AI",
+    "usecase3Badge2": "Work Automation",
+    "usecase3Badge3": "Integrated Collaboration",
+    "usecase4Title": "RAG Service and Hallucination Prevention",
+    "usecase4Desc": "RAG technology prevents AI model hallucination and ensures accurate and reliable information provision.",
+    "usecase4Badge1": "Hallucination Prevention",
+    "industryApp1": {
+      "title": "Smart Factory Automation",
+      "description": "AI-driven factory automation solutions"
+    },
+    "industryApp2": {
+      "title": "Advanced Car Tuning",
+      "description": "Intelligent automotive performance optimization"
+    },
+    "industryApp3": {
+      "title": "Cable Car Management",
+      "description": "Smart transportation system management"
+    },
+    "usecase4Badge2": "Accuracy Improvement",
+    "usecase4Badge3": "Knowledge Verification"
+  },
+  "cableCar": {
+    "title": "Cable Car Systems",
+    "intro": "Our cable car systems are designed for safety, efficiency, and reliability, providing innovative solutions for urban and recreational transportation.",
+    "technology": {
+      "title": "Technology and Solutions",
+      "description": "We offer a range of cable car technologies, including detachable gondolas, fixed-grip systems, and reversible aerial tramways. Our solutions are tailored to meet the specific needs of each project, ensuring optimal performance and passenger comfort."
+    },
+    "installations": {
+      "title": "Installation Examples",
+      "urbanTransit": {
+        "title": "Urban Transit System",
+        "description": "A cable car system integrated into a city's public transportation network"
+      },
+      "mountainResort": {
+        "title": "Mountain Resort Gondola",
+        "description": "A gondola system providing access to a mountain resort"
+      },
+      "scenicTramway": {
+        "title": "Scenic Aerial Tramway",
+        "description": "An aerial tramway offering panoramic views of a scenic area"
+      }
+    },
+    "safety": {
+      "title": "Safety and Operation",
+      "description": "Our cable car systems adhere to the highest safety standards, incorporating advanced monitoring and control systems. We provide comprehensive training and support to ensure safe and efficient operation."
+    }
+  },
+  "smartFactory": {
+    "title": "Smart Factory Solutions",
+    "intro": "Transform your manufacturing processes with AI-powered automation, predictive maintenance, and intelligent quality control systems.",
+    "solutionsTitle": "Our Smart Factory Solutions",
+    "solution1": {
+      "title": "Intelligent Process Optimization",
+      "description": "Optimize production workflows with AI-driven insights, reducing bottlenecks and maximizing throughput."
+    },
+    "solution2": {
+      "title": "Advanced Quality Control",
+      "description": "Enhance product quality with real-time defect detection and analysis using computer vision."
+    },
+    "solution3": {
+      "title": "Predictive Maintenance",
+      "description": "Minimize downtime and maintenance costs by predicting equipment failures with AI."
+    },
+    "storiesTitle": "Success Stories",
+    "story1": {
+      "title": "Automotive Manufacturing",
+      "description": "Increased production efficiency by 20% and reduced defect rates by 15% with our AI solutions."
+    },
+    "story2": {
+      "title": "Electronics Assembly",
+      "description": "Achieved 99.5% accuracy in quality control and reduced waste by 30% through AI-powered inspection."
+    },
+    "story3": {
+      "title": "Food Processing",
+      "description": "Improved food safety compliance by 40% and optimized supply chain efficiency with our smart factory solutions."
+    },
+    "metric1": "Production Efficiency",
+    "metric2": "Quality Accuracy",
+    "metric3": "Waste Reduction",
+    "metric4": "Cost Reduction",
+    "ctaTitle": "Transform Your Factory with AI",
+    "ctaDescription": "Ready to take the next step towards a smarter, more efficient factory? Contact us today to learn how our AI solutions can benefit your business."
+  },
+  "computerVision": {
+    "title": "Computer Vision Solutions",
+    "intro": "Transform your operations with our cutting-edge computer vision technology. We offer solutions for various industries, including manufacturing, automotive, and transportation.",
+    "applicationsTitle": "Key Applications",
+    "app1": {
+      "title": "Smart Factory",
+      "description": "Enhance production efficiency and quality with real-time monitoring and defect detection."
+    },
+    "app2": {
+      "title": "Automotive Tuning",
+      "description": "Optimize vehicle performance and safety through advanced image analysis and control systems."
+    },
+    "app3": {
+      "title": "Cable Car Safety",
+      "description": "Ensure passenger safety and operational reliability with intelligent monitoring and control systems."
+    },
+    "projectsTitle": "Featured Projects",
+    "project1": {
+      "title": "Smart Factory Implementation",
+      "description": "A leading manufacturer improved production efficiency by 20% using our computer vision solution."
+    },
+    "project2": {
+      "title": "Automotive Performance Tuning",
+      "description": "A racing team achieved a 15% performance boost with our AI-powered tuning system."
+    },
+    "project3": {
+      "title": "Cable Car Safety System",
+      "description": "A major cable car operator enhanced safety and reliability with our advanced monitoring system."
+    },
+    "technologiesTitle": "Computer Vision Technologies",
+    "tech1": {
+      "title": "Industrial Defect Detection",
+      "description": "Our advanced computer vision algorithms utilize deep learning models to identify manufacturing defects with unprecedented accuracy. The system processes high-resolution images in real-time, detecting microscopic flaws that traditional inspection methods might miss.",
+      "feature1": "✓ 99.5% accuracy in defect detection",
+      "feature2": "✓ Real-time processing at 60 FPS",
+      "feature3": "✓ Integration with existing production lines",
+      "feature4": "✓ Automated quality control reporting"
+    },
+    "tech2": {
+      "title": "Autonomous Driving Vision",
+      "description": "Our computer vision technology enables precise object detection, lane recognition, and traffic sign interpretation for autonomous vehicles. Multi-camera fusion provides 360-degree environmental awareness with advanced depth perception and motion prediction.",
+      "feature1": "✓ Multi-object tracking and classification",
+      "feature2": "✓ Lane detection and path planning",
+      "feature3": "✓ Traffic sign and signal recognition",
+      "feature4": "✓ Pedestrian and obstacle avoidance"
+    },
+    "tech3": {
+      "title": "Advanced Image Analysis",
+      "description": "Leveraging state-of-the-art neural networks including CNN, YOLO, and Transformer architectures, our systems provide comprehensive visual intelligence for industrial automation, security monitoring, and predictive maintenance applications.",
+      "feature1": "✓ Deep learning model optimization",
+      "feature2": "✓ Edge computing deployment",
+      "feature3": "✓ Custom model training and fine-tuning",
+      "feature4": "✓ Scalable cloud-based processing"
+    }
+  },
+  "carTuning": {
+    "title": "Advanced Car Tuning Solutions",
+    "description": "Transform your vehicle's performance with AI-driven ECU optimization, precision engine mapping, and advanced data analytics. Our cutting-edge tuning solutions deliver measurable power gains while maintaining reliability and emissions compliance.",
+    "servicesTitle": "Technical Services",
+    "service1": {
+      "title": "ECU Remapping",
+      "description": "Advanced engine control unit programming with real-time data analysis. Optimize fuel maps, ignition timing, and boost pressure for maximum performance."
+    },
+    "service2": {
+      "title": "Turbo/Supercharger Tuning",
+      "description": "Precision forced induction optimization. Custom boost maps, wastegate control, and intercooler efficiency enhancement for maximum power delivery."
+    },
+    "service3": {
+      "title": "Dyno Testing & Analysis",
+      "description": "Comprehensive dynamometer testing with real-time telemetry. Air-fuel ratio monitoring, knock detection, and emissions analysis for optimal tuning."
+    },
+    "processTitle": "Our Tuning Process",
+    "process1": {
+      "title": "Initial Diagnostics",
+      "description": "Comprehensive vehicle assessment using OBD-II scanning, compression testing, and baseline dyno runs to establish current performance parameters."
+    },
+    "process2": {
+      "title": "Custom Mapping",
+      "description": "AI-assisted ECU calibration with custom fuel and ignition maps tailored to your specific engine configuration and performance goals."
+    },
+    "process3": {
+      "title": "Real-Time Optimization",
+      "description": "Live tuning sessions with continuous monitoring of AFR, knock sensors, and exhaust gas temperatures for safe power optimization."
+    },
+    "process4": {
+      "title": "Validation & Testing",
+      "description": "Final dyno validation with multiple power runs, road testing, and comprehensive data logging to ensure reliability and performance."
+    },
+    "performanceTitle": "Typical Performance Gains",
+    "performance": {
+      "horsepower": "Horsepower Increase",
+      "torque": "Torque Enhancement",
+      "efficiency": "Fuel Efficiency Improvement", 
+      "acceleration": "0-100km/h Reduction",
+      "disclaimer": "*Results may vary depending on vehicle condition and modifications"
+    },
+    "caseStudiesTitle": "Case Studies & Results",
+    "case1": {
+      "title": "BMW M3 F80 Turbo Optimization",
+      "subtitle": "High-Performance Sedan",
+      "powerGain": "Power Gain",
+      "torqueGain": "Torque Gain",
+      "accelImprovement": "0-100 Faster", 
+      "description": "Stage 2 ECU tune with custom turbo mapping, optimized fuel delivery, and advanced knock protection. Achieved 510HP total output while maintaining reliability."
+    },
+    "case2": {
+      "title": "Audi RS6 Avant ECU Flash",
+      "subtitle": "Twin-Turbo V8 Wagon",
+      "powerGain": "Power Gain",
+      "torqueGain": "Torque Gain",
+      "efficiencyGain": "Efficiency Gain",
+      "description": "Stage 1+ tune optimizing both turbos with enhanced boost control, revised timing maps, and improved throttle response. Total output: 695HP/850Nm."
+    },
+    "equipmentTitle": "Professional Equipment & Technology",
+    "equipment": {
+      "dyno": {
+        "title": "4WD Chassis Dynamometer",
+        "description": "State-of-the-art dyno capable of measuring up to 1,500HP with real-time data acquisition and environmental simulation."
+      },
+      "emissions": {
+        "title": "5-Gas Emissions Analyzer", 
+        "description": "Professional emissions testing equipment ensuring compliance with environmental regulations while maximizing performance."
+      },
+      "aiEcu": {
+        "title": "AI-Powered ECU Programming",
+        "description": "Machine learning algorithms analyze engine data to optimize performance maps with precision impossible through traditional methods."
+      },
+      "diagnostic": {
+        "title": "Advanced Diagnostic Capabilities",
+        "description": "Our facility features cutting-edge diagnostic equipment including oscilloscopes, multimeters, pressure transducers, and wide-band O2 sensors for comprehensive engine analysis and optimization."
+      }
+    }
+  },
+  "motorsports": {
+    "title": "Next-Generation Motorsports Technology",
+    "subtitle": "Revolutionizing the Future of Racing",
+    "intro": "Revolutionize your racing performance with cutting-edge sensor technology, AI analysis, and real-time data processing. We analyze every data point from racing vehicles in real-time to provide optimal performance and strategic advantages.",
+    "badges": {
+      "bigdata": "Big Data Analysis",
+      "customAI": "Custom AI Models",
+      "realtime": "Real-time Feedback",
+      "prediction": "Predictive Algorithms"
+    },
+    "servicesTitle": "3H-Solutions Core Services",
+    "service1": {
+      "title": "1. Motorsports Big Data Analysis",
+      "description": "F1-level data collection systems analyze real-time data from over 500 sensors including engine telemetry, suspension dynamics, aerodynamic forces, GPS positioning, and driver biometrics using advanced AI algorithms.",
+      "feature1": "• Engine Performance: RPM, Torque, Temperature, Power",
+      "feature2": "• Tire Analysis: Wear, Grip Level, Optimal Pressure",
+      "feature3": "• Electric Data: Battery Status, Energy Recovery",
+      "feature4": "• Thermal Management: Cooling Systems, Brake Temperature",
+      "feature5": "• Telemetry: Real-time Wireless Data Transmission",
+      "feature6": "• Predictive Analysis: Race Strategy Optimization",
+      "feature7": "• Driver Analysis: Heart Rate, Reaction Time",
+      "feature8": "• Aerodynamics: Downforce, Drag Coefficient",
+      "badge1": "Real-time Processing",
+      "badge2": "99.99% Accuracy",
+      "badge3": "Machine Learning Analysis"
+    },
+    "service2": {
+      "title": "2. Custom AI Model Development",
+      "description": "We develop customized AI models based on individual vehicle characteristics, driver preferences, and track conditions. Our neural networks analyze hundreds of data points to suggest optimal settings and strategies.",
+      "feature1": "• Driver Profiling: Personal Driving Pattern Analysis",
+      "feature2": "• Vehicle Setup: Suspension, Aerodynamics, Gearing",
+      "feature3": "• Strategy Planning: Tires, Fuel, Pit Stops",
+      "feature4": "• Weather Data: Various Weather Scenarios",
+      "feature5": "• Track Analysis: Optimal Racing Lines",
+      "feature6": "• Competitor Analysis: Racing Pattern Prediction",
+      "feature7": "• Safety Systems: Risk Assessment & Prevention",
+      "feature8": "• Performance Optimization: Lap Time Improvement"
+    },
+    "service3": {
+      "title": "3. Real-time Decision Support System",
+      "description": "Our advanced system provides real-time strategic recommendations during races, analyzing current conditions and predicting optimal timing for pit stops, tire changes, and tactical decisions.",
+      "feature1": "• Live Strategy Updates",
+      "feature2": "• Pit Stop Optimization",
+      "feature3": "• Weather Impact Analysis",
+      "feature4": "• Fuel Management",
+      "feature5": "• Tire Performance Monitoring",
+      "feature6": "• Competitor Position Tracking",
+      "feature7": "• Risk Assessment Alerts",
+      "feature8": "• Performance Optimization Tips"
+    },
+    "metricsTitle": "Performance Results",
+    "metric1": "Average Lap Time Improvement",
+    "metric2": "Fuel Efficiency Gain",
+    "metric3": "Strategy Prediction Accuracy",
+    "metric4": "Risk Reduction",
+    "technology": {
+      "title": "Latest Technology Stack",
+      "aiml": {
+        "title": "AI/ML Analysis",
+        "description": "TensorFlow, PyTorch<br>Deep Learning Predictive Analysis"
+      },
+      "iot": {
+        "title": "IoT Sensor Network",
+        "description": "Real-time Data Collection<br>500+ Sensor Support"
+      },
+      "communication": {
+        "title": "5G/6G Communication",
+        "description": "Ultra-low Latency Transmission<br>1ms Response Time"
+      },
+      "cloud": {
+        "title": "Cloud Analytics",
+        "description": "AWS/Azure Based<br>Big Data Processing"
+      }
+    },
+    "ctaTitle": "Ready to Dominate the Track?",
+    "ctaDescription": "Experience the future of motorsports with our cutting-edge AI technology. Contact us today to see how we can give you the competitive edge."
+  }
+}

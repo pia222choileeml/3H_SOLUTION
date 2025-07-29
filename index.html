@@ -7,11 +7,46 @@
     <link href="data:image/x-icon;base64," rel="icon" type="image/x-icon"/>
     <link crossorigin="" href="https://fonts.gstatic.com/" rel="preconnect"/>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet"/>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous"/>
+    <link href="components/bootstrap.min.css" rel="stylesheet"/>
     <link href="components/common-styles.css" rel="stylesheet"/>
     <link href="assets/css/index.css" rel="stylesheet"/>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
+    <script src="components/bootstrap.min.js"></script>
     <script src="components/common.js"></script>
+    <script src="components/i18n.js"></script>
+    <script>
+      document.addEventListener('DOMContentLoaded', async function() {
+        try {
+          window.i18n = new I18n();
+          await window.i18n.init();
+          
+          // 컴포넌트 로드 완료 후 번역 재적용
+          const observer = new MutationObserver(function(mutations) {
+            mutations.forEach(function(mutation) {
+              if (mutation.type === 'childList' && mutation.addedNodes.length > 0) {
+                // 새로 추가된 노드가 있을 때 번역 다시 적용
+                setTimeout(() => {
+                  if (window.i18n) window.i18n.updatePage();
+                }, 100);
+              }
+            });
+          });
+          
+          // navbar와 footer placeholder 감시
+          const navbarPlaceholder = document.getElementById('navbar-placeholder');
+          const footerPlaceholder = document.getElementById('footer-placeholder');
+          
+          if (navbarPlaceholder) {
+            observer.observe(navbarPlaceholder, { childList: true, subtree: true });
+          }
+          if (footerPlaceholder) {
+            observer.observe(footerPlaceholder, { childList: true, subtree: true });
+          }
+        } catch (error) {
+          console.error('Error initializing i18n:', error);
+        }
+      });
+    </script>
 </head>
 <body>
     <!-- Navigation Bar Placeholder -->
@@ -24,7 +59,7 @@
                 <div class="col-lg-6">
                     <h1 class="display-3 fw-bold text-white mb-4">
                         <span class="hero-text-gradient">3H-Solutions</span><br>
-                        첨단 기술로 미래를 향해<br>전진하는 기업
+                        <span data-i18n="index.hero.title" data-i18n-html="true">첨단 기술로 미래를 향해<br>전진하는 기업</span>
                     </h1>
                     
                     <!-- 3H 의미 표현 -->
@@ -43,37 +78,23 @@
                         </div>
                     </div>
                     
-                    <p class="lead text-white-50 mb-5">
+                    <p class="lead text-white-50 mb-5" data-i18n="index.hero.description">
                         AI 기술의 무한한 가능성을 통해 모든 산업 분야에서 
                         혁신적인 변화를 이끌어내는 글로벌 기술 파트너입니다.
                     </p>
                     <div class="d-flex gap-3">
-                        <a href="#solutions" class="btn btn-light btn-lg px-4 py-3 rounded-pill fw-semibold">
+                        <a href="#solutions" class="btn btn-light btn-lg px-4 py-3 rounded-pill fw-semibold" data-i18n="index.hero.exploreBtn">
                             솔루션 살펴보기
                         </a>
-                        <a href="#contact" class="btn btn-outline-light btn-lg px-4 py-3 rounded-pill fw-semibold">
+                        <a href="#contact" class="btn btn-outline-light btn-lg px-4 py-3 rounded-pill fw-semibold" data-i18n="index.hero.contactBtn">
                             문의하기
                         </a>
                     </div>
                 </div>
                 <div class="col-lg-6">
                     <div class="text-center">
-                        <!-- 3H-Solution.jpg 이미지로 변경 -->
-                        <div class="ai-hero-visual position-relative">
-                            <img src="images/3H-Solution.jpg" alt="3H-Solutions AI Technology" class="img-fluid rounded-3 shadow-lg" style="max-width: 450px; width: 100%;">
-                            
-                            <!-- 이미지 위에 3H 브랜딩 오버레이 -->
-                            <div class="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center justify-content-center" style="background: linear-gradient(45deg, rgba(59,130,246,0.1) 0%, rgba(29,78,216,0.1) 100%); border-radius: 12px;">
-                                <div class="text-center text-white">
-                                    <h3 class="fw-bold mb-3" style="text-shadow: 2px 2px 4px rgba(0,0,0,0.5);">3H Technology</h3>
-                                    <div class="d-flex justify-content-center gap-3">
-                                        <span class="badge bg-primary px-3 py-2 fw-bold">H</span>
-                                        <span class="badge bg-primary px-3 py-2 fw-bold">H</span>
-                                        <span class="badge bg-primary px-3 py-2 fw-bold">H</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                        <!-- 3H-Solution.jpg 이미지로 변경 -->                        
+                        <img src="images/3H-Solution.jpg" alt="3H-Solutions AI Technology" class="img-fluid rounded-3 shadow-lg" style="max-width: 450px; width: 100%;">                                                       
                     </div>
                 </div>
             </div>
@@ -89,8 +110,8 @@
     <section id="solutions" class="py-5">
         <div class="container">
             <div class="text-center mb-5">
-                <h2 class="section-title display-5 fw-bold text-dark mb-3">Our Solutions</h2>
-                <p class="lead text-muted">다양한 산업 분야에 특화된 AI 솔루션을 제공합니다</p>
+                <h2 class="section-title display-5 fw-bold text-dark mb-3" data-i18n="index.solutions.title">Our Solutions</h2>
+                <p class="lead text-muted" data-i18n="index.solutions.subtitle">다양한 산업 분야에 특화된 AI 솔루션을 제공합니다</p>
             </div>
             
             <div class="row g-4">
@@ -101,11 +122,11 @@
                                 <path d="M116,176a8,8,0,0,1-8,8H80a8,8,0,0,1,0-16h28A8,8,0,0,1,116,176Zm60-8H148a8,8,0,0,0,0,16h28a8,8,0,0,0,0-16Zm72,48a8,8,0,0,1-8,8H16a8,8,0,0,1,0-16H32V88a8,8,0,0,1,12.8-6.4L96,120V88a8,8,0,0,1,12.8-6.4l38.74,29.05L159.1,29.74A16.08,16.08,0,0,1,174.94,16h18.12A16.08,16.08,0,0,1,208.9,29.74l15,105.13s.08.78.08,1.13v72h16A8,8,0,0,1,248,216Zm-85.86-94.4,8.53,6.4h36.11L193.06,32H174.94ZM48,208H208V144H168a8,8,0,0,1-4.8-1.6l-14.4-10.8,0,0L112,104v32a8,8,0,0,1-12.8,6.4L48,104Z"></path>
                             </svg>
                         </div>
-                        <h3 class="h4 fw-bold text-center mb-3">Smart Factory</h3>
-                        <p class="text-muted text-center mb-4">
+                        <h3 class="h4 fw-bold text-center mb-3" data-i18n="index.solutions.smartFactory.title">Smart Factory</h3>
+                        <p class="text-muted text-center mb-4" data-i18n="index.solutions.smartFactory.description">
                             AI 기반 스마트 팩토리 솔루션으로 생산성 향상과 품질 관리를 실현합니다.
                         </p>
-                        <a href="samrtfactory.html" class="btn btn-outline-primary btn-sm mx-auto d-block rounded-pill">
+                        <a href="samrtfactory.html" class="btn btn-outline-primary btn-sm mx-auto d-block rounded-pill" data-i18n="index.solutions.learnMore">
                             자세히 보기
                         </a>
                     </div>
@@ -118,11 +139,11 @@
                                 <path d="M247.31,124.76c-.35-.79-8.82-19.58-27.65-38.41C194.57,61.26,162.88,48,128,48S61.43,61.26,36.34,86.35C17.51,105.18,9,124,8.69,124.76a8,8,0,0,0,0,6.5c.35.79,8.82,19.57,27.65,38.4C61.43,194.74,93.12,208,128,208s66.57-13.26,91.66-38.34c18.83-18.83,27.3-37.61,27.65-38.4A8,8,0,0,0,247.31,124.76ZM128,192c-30.78,0-57.67-11.19-79.93-33.25A133.47,133.47,0,0,1,25,128,133.33,133.33,0,0,1,48.07,97.25C70.33,75.19,97.22,64,128,64s57.67,11.19,79.93,33.25A133.46,133.46,0,0,1,231.05,128C223.84,141.46,192.43,192,128,192Zm0-112a48,48,0,1,0,48,48A48.05,48.05,0,0,0,128,80Zm0,80a32,32,0,1,1,32-32A32,32,0,0,1,128,160Z"></path>
                             </svg>
                         </div>
-                        <h3 class="h4 fw-bold text-center mb-3">Computer Vision</h3>
-                        <p class="text-muted text-center mb-4">
+                        <h3 class="h4 fw-bold text-center mb-3" data-i18n="index.solutions.computerVision.title">Computer Vision</h3>
+                        <p class="text-muted text-center mb-4" data-i18n="index.solutions.computerVision.description">
                             첨단 컴퓨터 비전 기술로 품질 검사와 자동화를 혁신합니다.
                         </p>
-                        <a href="computervisoin.html" class="btn btn-outline-primary btn-sm mx-auto d-block rounded-pill">
+                        <a href="computervisoin.html" class="btn btn-outline-primary btn-sm mx-auto d-block rounded-pill" data-i18n="index.solutions.learnMore">
                             자세히 보기
                         </a>
                     </div>
@@ -135,11 +156,11 @@
                                 <path d="M144,40a8,8,0,0,0-8-8H120a8,8,0,0,0-8,8v8H88a8,8,0,0,0-8,8V72a8,8,0,0,0,8,8h24v8a8,8,0,0,0,8,8h16a8,8,0,0,0,8-8V80h24a8,8,0,0,0,8-8V56a8,8,0,0,0-8-8H144ZM168,64H144a8,8,0,0,0-8,8v8H120V64a8,8,0,0,0-8-8H88V56H168ZM232,56V200a16,16,0,0,1-16,16H40a16,16,0,0,1-16-16V56A16,16,0,0,1,40,40H216A16,16,0,0,1,232,56ZM216,56H40V200H216V56Z"></path>
                             </svg>
                         </div>
-                        <h3 class="h4 fw-bold text-center mb-3">LLM Solutions</h3>
-                        <p class="text-muted text-center mb-4">
+                        <h3 class="h4 fw-bold text-center mb-3" data-i18n="index.solutions.llm.title">LLM Solutions</h3>
+                        <p class="text-muted text-center mb-4" data-i18n="index.solutions.llm.description">
                             대화형 AI와 자연어 처리 기술로 비즈니스 혁신을 지원합니다.
                         </p>
-                        <a href="llm.html" class="btn btn-outline-primary btn-sm mx-auto d-block rounded-pill">
+                        <a href="llm.html" class="btn btn-outline-primary btn-sm mx-auto d-block rounded-pill" data-i18n="index.solutions.learnMore">
                             자세히 보기
                         </a>
                     </div>
@@ -152,11 +173,11 @@
                                 <path d="M240,104H229.2L201.42,41.5A16,16,0,0,0,186.8,32H69.2a16,16,0,0,0-14.62,9.5L26.8,104H16a8,8,0,0,0,0,16h8v80a16,16,0,0,0,16,16H216a16,16,0,0,0,16-16V120h8a8,8,0,0,0,0-16ZM69.2,48H186.8l24,56H45.2ZM216,200H40V120H216v80ZM56,144a8,8,0,0,1,8-8H80a8,8,0,0,1,0,16H64A8,8,0,0,1,56,144Zm120,0a8,8,0,0,1,8-8h16a8,8,0,0,1,0,16H184A8,8,0,0,1,176,144Z"></path>
                             </svg>
                         </div>
-                        <h3 class="h4 fw-bold text-center mb-3">Car Tuning</h3>
-                        <p class="text-muted text-center mb-4">
+                        <h3 class="h4 fw-bold text-center mb-3" data-i18n="index.solutions.carTuning.title">Car Tuning</h3>
+                        <p class="text-muted text-center mb-4" data-i18n="index.solutions.carTuning.description">
                             정밀한 ECU 튜닝과 성능 최적화로 차량의 잠재력을 극대화합니다.
                         </p>
-                        <a href="catturning.html" class="btn btn-outline-primary btn-sm mx-auto d-block rounded-pill">
+                        <a href="catturning.html" class="btn btn-outline-primary btn-sm mx-auto d-block rounded-pill" data-i18n="index.solutions.learnMore">
                             자세히 보기
                         </a>
                     </div>
@@ -169,11 +190,11 @@
                                 <path d="M247.31,124.76c-.35-.79-8.82-19.58-27.65-38.41C194.57,61.26,162.88,48,128,48S61.43,61.26,36.34,86.35C17.51,105.18,9,124,8.69,124.76a8,8,0,0,0,0,6.5c.35.79,8.82,19.57,27.65,38.4C61.43,194.74,93.12,208,128,208s66.57-13.26,91.66-38.34c18.83-18.83,27.3-37.61,27.65-38.4A8,8,0,0,0,247.31,124.76ZM128,192c-30.78,0-57.67-11.19-79.93-33.25A133.47,133.47,0,0,1,25,128,133.33,133.33,0,0,1,48.07,97.25C70.33,75.19,97.22,64,128,64s57.67,11.19,79.93,33.25A133.46,133.46,0,0,1,231.05,128C223.84,141.46,192.43,192,128,192Zm0-112a48,48,0,1,0,48,48A48.05,48.05,0,0,0,128,80Zm0,80a32,32,0,1,1,32-32A32,32,0,0,1,128,160Z"></path>
                             </svg>
                         </div>
-                        <h3 class="h4 fw-bold text-center mb-3">Motorsports</h3>
-                        <p class="text-muted text-center mb-4">
+                        <h3 class="h4 fw-bold text-center mb-3" data-i18n="index.solutions.motorsports.title">Motorsports</h3>
+                        <p class="text-muted text-center mb-4" data-i18n="index.solutions.motorsports.description">
                             레이싱 데이터 분석과 성능 모니터링으로 경쟁 우위를 확보합니다.
                         </p>
-                        <a href="motorsports.html" class="btn btn-outline-primary btn-sm mx-auto d-block rounded-pill">
+                        <a href="motorsports.html" class="btn btn-outline-primary btn-sm mx-auto d-block rounded-pill" data-i18n="index.solutions.learnMore">
                             자세히 보기
                         </a>
                     </div>
@@ -186,65 +207,28 @@
                                 <path d="M208,80H172.65a15.85,15.85,0,0,0-14.76,10.06L152,104H136V80a16,16,0,0,0-16-16H56A16,16,0,0,0,40,80v96a16,16,0,0,0,16,16H216a16,16,0,0,0,16-16V96A16,16,0,0,0,208,80ZM56,80H120v24H40V80ZM216,176H56V120H136v8a8,8,0,0,0,8,8h16a8,8,0,0,0,8-8v-8h17.35a15.85,15.85,0,0,0,14.76-10.06L206,96h10v80Z"></path>
                             </svg>
                         </div>
-                        <h3 class="h4 fw-bold text-center mb-3">Cable Car Systems</h3>
-                        <p class="text-muted text-center mb-4">
+                        <h3 class="h4 fw-bold text-center mb-3" data-i18n="index.solutions.cableCar.title">Cable Car Systems</h3>
+                        <p class="text-muted text-center mb-4" data-i18n="index.solutions.cableCar.description">
                             스마트 케이블카 시스템으로 안전하고 효율적인 운영을 지원합니다.
                         </p>
-                        <a href="cablecar.html" class="btn btn-outline-primary btn-sm mx-auto d-block rounded-pill">
+                        <a href="cablecar.html" class="btn btn-outline-primary btn-sm mx-auto d-block rounded-pill" data-i18n="index.solutions.learnMore">
                             자세히 보기
                         </a>
                     </div>
                 </div>
             </div>
         </div>
-    </section>
-
-    <!-- Performance Stats Section -->
-    <section class="py-5 bg-light">
-        <div class="container">
-            <div class="text-center mb-5">
-                <h2 class="section-title display-5 fw-bold text-dark mb-3">Performance Metrics</h2>
-                <p class="lead text-muted">우리의 성과를 숫자로 확인하세요</p>
-            </div>
-            
-            <div class="row g-4">
-                <div class="col-lg-3 col-md-6">
-                    <div class="stats-card">
-                        <h3 class="display-4 fw-bold mb-2">150+</h3>
-                        <p class="mb-0 fw-semibold">완료된 프로젝트</p>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6">
-                    <div class="stats-card">
-                        <h3 class="display-4 fw-bold mb-2">98%</h3>
-                        <p class="mb-0 fw-semibold">고객 만족도</p>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6">
-                    <div class="stats-card">
-                        <h3 class="display-4 fw-bold mb-2">50+</h3>
-                        <p class="mb-0 fw-semibold">글로벌 고객사</p>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6">
-                    <div class="stats-card">
-                        <h3 class="display-4 fw-bold mb-2">24/7</h3>
-                        <p class="mb-0 fw-semibold">기술 지원</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+    </section>    
 
     <!-- About Section -->
     <section id="about" class="py-5">
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-lg-6 mb-4 mb-lg-0">
-                    <h2 class="section-title display-5 fw-bold text-dark mb-4">About 3H-Solutions</h2>
+                    <h2 class="section-title display-5 fw-bold text-dark mb-4" data-i18n="index.about.title">About 3H-Solutions</h2>
                     <p class="lead text-muted mb-4">
-                        <strong>"첨단 기술로 미래를 향해 전진하는 기업"</strong><br>
-                        3H-Solutions는 세 가지 핵심 가치를 바탕으로 AI 혁신을 선도합니다.
+                        <strong data-i18n="index.about.slogan">"첨단 기술로 미래를 향해 전진하는 기업"</strong><br>
+                        <span data-i18n="index.about.description">3H-Solutions는 세 가지 핵심 가치를 바탕으로 AI 혁신을 선도합니다.</span>
                     </p>
                     
                     <!-- 3H 가치 상세 설명 -->
@@ -256,8 +240,8 @@
                                 </span>
                             </div>
                             <div>
-                                <h5 class="fw-bold text-primary mb-1">Headway</h5>
-                                <p class="text-muted mb-0">끊임없는 전진과 기술 발전을 통해 업계를 선도합니다</p>
+                                <h5 class="fw-bold text-primary mb-1" data-i18n="index.about.headway.title">Headway</h5>
+                                <p class="text-muted mb-0" data-i18n="index.about.headway.description">끊임없는 전진과 기술 발전을 통해 업계를 선도합니다</p>
                             </div>
                         </div>
                         
@@ -268,8 +252,8 @@
                                 </span>
                             </div>
                             <div>
-                                <h5 class="fw-bold text-primary mb-1">High-tech</h5>
-                                <p class="text-muted mb-0">최첨단 AI 기술과 혁신적인 솔루션을 개발합니다</p>
+                                <h5 class="fw-bold text-primary mb-1" data-i18n="index.about.hightech.title">High-tech</h5>
+                                <p class="text-muted mb-0" data-i18n="index.about.hightech.description">최첨단 AI 기술과 혁신적인 솔루션을 개발합니다</p>
                             </div>
                         </div>
                         
@@ -280,8 +264,8 @@
                                 </span>
                             </div>
                             <div>
-                                <h5 class="fw-bold text-primary mb-1">Horizon</h5>
-                                <p class="text-muted mb-0">새로운 가능성을 탐구하며 글로벌 시장으로 확장합니다</p>
+                                <h5 class="fw-bold text-primary mb-1" data-i18n="index.about.horizon.title">Horizon</h5>
+                                <p class="text-muted mb-0" data-i18n="index.about.horizon.description">새로운 가능성을 탐구하며 글로벌 시장으로 확장합니다</p>
                             </div>
                         </div>
                     </div>
@@ -289,123 +273,34 @@
                     <div class="row text-center">
                         <div class="col-4">
                             <h4 class="fw-bold text-primary">AI</h4>
-                            <small class="text-muted">Innovation Leader</small>
+                            <small class="text-muted" data-i18n="index.about.stats.innovation">Innovation Leader</small>
                         </div>
                         <div class="col-4">
                             <h4 class="fw-bold text-primary">6</h4>
-                            <small class="text-muted">Core Solutions</small>
+                            <small class="text-muted" data-i18n="index.about.stats.solutions">Core Solutions</small>
                         </div>
                         <div class="col-4">
                             <h4 class="fw-bold text-primary">∞</h4>
-                            <small class="text-muted">Innovation</small>
+                            <small class="text-muted" data-i18n="index.about.stats.infinity">Innovation</small>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-6">
                     <div class="text-center">
-                        <!-- AI 기업을 대표하는 시각적 요소 -->
-                        <div class="about-visual-container position-relative p-4">
-                            <svg width="400" height="300" viewBox="0 0 400 300" class="img-fluid">
-                                <!-- 배경 그리드 -->
-                                <defs>
-                                    <pattern id="grid" width="20" height="20" patternUnits="userSpaceOnUse">
-                                        <path d="M 20 0 L 0 0 0 20" fill="none" stroke="rgba(59,130,246,0.1)" stroke-width="1"/>
-                                    </pattern>
-                                    <linearGradient id="techGradient" x1="0%" y1="0%" x2="100%" y2="100%">
-                                        <stop offset="0%" stop-color="#3b82f6" stop-opacity="0.8"/>
-                                        <stop offset="50%" stop-color="#1d4ed8" stop-opacity="0.6"/>
-                                        <stop offset="100%" stop-color="#1e40af" stop-opacity="0.4"/>
-                                    </linearGradient>
-                                </defs>
-                                
-                                <rect width="400" height="300" fill="url(#grid)"/>
-                                
-                                <!-- 중앙 AI 아이콘 -->
-                                <g transform="translate(200,150)">
-                                    <!-- 뇌 형태 -->
-                                    <path d="M-60,-40 Q-80,-60 -60,-80 Q-20,-90 20,-80 Q60,-60 60,-40 Q80,-20 60,0 Q80,20 60,40 Q20,50 -20,40 Q-60,20 -60,-40" 
-                                          fill="url(#techGradient)" stroke="#3b82f6" stroke-width="2"/>
-                                    
-                                    <!-- 신경망 노드들 -->
-                                    <circle cx="-40" cy="-20" r="4" fill="#60a5fa"/>
-                                    <circle cx="0" cy="-30" r="5" fill="#3b82f6"/>
-                                    <circle cx="40" cy="-20" r="4" fill="#60a5fa"/>
-                                    <circle cx="-20" cy="0" r="3" fill="#93c5fd"/>
-                                    <circle cx="20" cy="0" r="3" fill="#93c5fd"/>
-                                    <circle cx="0" cy="20" r="4" fill="#2563eb"/>
-                                    
-                                    <!-- 연결선 -->
-                                    <g stroke="rgba(59,130,246,0.6)" stroke-width="1.5" fill="none">
-                                        <line x1="-40" y1="-20" x2="0" y2="-30"/>
-                                        <line x1="0" y1="-30" x2="40" y2="-20"/>
-                                        <line x1="-40" y1="-20" x2="-20" y2="0"/>
-                                        <line x1="40" y1="-20" x2="20" y2="0"/>
-                                        <line x1="-20" y1="0" x2="0" y2="20"/>
-                                        <line x1="20" y1="0" x2="0" y2="20"/>
-                                    </g>
-                                </g>
-                                
-                                <!-- 주변 데이터 흐름 -->
-                                <g opacity="0.7">
-                                    <!-- 왼쪽 데이터 스트림 -->
-                                    <rect x="20" y="100" width="40" height="4" rx="2" fill="#3b82f6">
-                                        <animate attributeName="x" values="20;160;20" dur="3s" repeatCount="indefinite"/>
-                                    </rect>
-                                    <rect x="30" y="120" width="35" height="3" rx="1.5" fill="#60a5fa">
-                                        <animate attributeName="x" values="30;165;30" dur="3.5s" repeatCount="indefinite"/>
-                                    </rect>
-                                    
-                                    <!-- 오른쪽 데이터 스트림 -->
-                                    <rect x="340" y="180" width="40" height="4" rx="2" fill="#2563eb">
-                                        <animate attributeName="x" values="340;200;340" dur="2.8s" repeatCount="indefinite"/>
-                                    </rect>
-                                    <rect x="350" y="200" width="30" height="3" rx="1.5" fill="#93c5fd">
-                                        <animate attributeName="x" values="350;220;350" dur="3.2s" repeatCount="indefinite"/>
-                                    </rect>
-                                </g>
-                                
-                                <!-- 3H 텍스트 -->
-                                <text x="200" y="250" text-anchor="middle" font-family="Inter, sans-serif" font-size="24" font-weight="bold" fill="#1d4ed8">
-                                    3H Solutions
-                                </text>
-                                <text x="200" y="270" text-anchor="middle" font-family="Inter, sans-serif" font-size="12" fill="#64748b">
-                                    Headway • High-tech • Horizon
-                                </text>
-                            </svg>
-                        </div>
+                        <!-- About 이미지로 변경 -->                        
+                            <img src="images/about.png" alt="3H-Solutions About" class="img-fluid rounded-3 shadow-lg" style="max-width: 450px; width: 100%;">                                                                              
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- CTA Section -->
-    <!-- <section class="py-5">
-        <div class="container">
-            <div class="cta-section">
-                <h2 class="display-4 fw-bold mb-4">프로젝트를 시작할 준비가 되셨나요?</h2>
-                <p class="lead mb-5">
-                    3H-Solutions와 함께 AI의 힘으로 비즈니스를 한 단계 업그레이드하세요.
-                    지금 바로 전문가와 상담해보세요.
-                </p>
-                <div class="d-flex gap-3 justify-content-center">
-                    <a href="#contact" class="btn btn-light btn-lg px-4 py-3 rounded-pill fw-semibold">
-                        무료 상담 신청
-                    </a>
-                    <a href="tel:+82-2-123-4567" class="btn btn-outline-light btn-lg px-4 py-3 rounded-pill fw-semibold">
-                        📞 전화 문의
-                    </a>
-                </div>
-            </div>
-        </div>
-    </section> -->
-
     <!-- Contact Section -->
     <section id="contact" class="py-5 bg-light">
         <div class="container">
             <div class="text-center mb-5">
-                <h2 class="section-title display-5 fw-bold text-dark mb-3">Contact Us</h2>
-                <p class="lead text-muted">궁금한 점이 있으시면 언제든 연락주세요</p>
+                <h2 class="section-title display-5 fw-bold text-dark mb-3" data-i18n="index.contact.title">Contact Us</h2>
+                <p class="lead text-muted" data-i18n="index.contact.subtitle">궁금한 점이 있으시면 언제든 연락주세요</p>
             </div>
             
             <!-- <div class="row">
@@ -461,7 +356,7 @@
                             <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
                         </svg>
                     </div>
-                    <h5 class="fw-bold">이메일</h5>
+                    <h5 class="fw-bold" data-i18n="index.contact.email.title">이메일</h5>
                     <p class="text-muted">jet21n@naver.com</p>
                 </div>
                 <div class="col-lg-4 text-center mb-4 mb-lg-0">
@@ -470,7 +365,7 @@
                             <path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/>
                         </svg>
                     </div>
-                    <h5 class="fw-bold">전화</h5>
+                    <h5 class="fw-bold" data-i18n="index.contact.phone.title">전화</h5>
                     <p class="text-muted">+82-10-7211-7807</p>
                 </div>
                 <div class="col-lg-4 text-center">
@@ -479,8 +374,8 @@
                             <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/>
                         </svg>
                     </div>
-                    <h5 class="fw-bold">주소</h5>
-                    <p class="text-muted">#416, Buildings C, Cwangmyeong TradeCenter,72<br>iljik-ro, Cwangmyeong-si Cyenggi-do<br>Republic of Korea</p>
+                    <h5 class="fw-bold" data-i18n="index.contact.address.title">주소</h5>
+                    <p class="text-muted" data-i18n="index.contact.address.content" data-i18n-html="true">#416, Buildings C, Cwangmyeong TradeCenter,72<br>iljik-ro, Cwangmyeong-si Cyenggi-do<br>Republic of Korea</p>
                 </div>
             </div>
         </div>
@@ -491,5 +386,61 @@
 
     <!-- Index Page Scripts -->
     <script src="assets/js/index.js"></script>
+    
+    <!-- Navigation Script for Smooth Scrolling -->
+    <script>
+        // Smooth scrolling for navigation links with improved performance
+        document.addEventListener('DOMContentLoaded', function() {
+            // Get all links with href starting with #
+            const scrollLinks = document.querySelectorAll('a[href^="#"]');
+            
+            scrollLinks.forEach(link => {
+                // 마우스 커서 강제 설정
+                link.style.cursor = 'pointer';
+                
+                // 클릭 이벤트 추가 (더 확실한 이벤트 처리)
+                link.addEventListener('click', function(e) {
+                    const href = this.getAttribute('href');
+                    
+                    // If href is just "#", don't do anything
+                    if (href === '#') return;
+                    
+                    // 기본 동작 방지
+                    e.preventDefault();
+                    e.stopPropagation();
+                    
+                    const targetId = href.substring(1);
+                    const targetElement = document.getElementById(targetId);
+                    
+                    if (targetElement) {
+                        const headerOffset = 80; // Adjust for fixed header if needed
+                        const elementPosition = targetElement.offsetTop;
+                        const offsetPosition = elementPosition - headerOffset;
+
+                        // 즉시 스크롤 (애니메이션 제거)
+                        window.scrollTo(0, offsetPosition);
+                        
+                        console.log(`Scrolled to ${targetId} at position ${offsetPosition}`);
+                    }
+                });
+                
+                // 마우스 오버 이벤트로 커서 확실히 설정
+                link.addEventListener('mouseenter', function() {
+                    this.style.cursor = 'pointer';
+                });
+            });
+            
+            // 모든 버튼에 커서 스타일 강제 적용
+            const allButtons = document.querySelectorAll('.btn, button, [role="button"]');
+            allButtons.forEach(button => {
+                button.style.cursor = 'pointer';
+                button.addEventListener('mouseenter', function() {
+                    this.style.cursor = 'pointer';
+                });
+            });
+            
+            console.log('Navigation script loaded successfully');
+        });
+    </script>
 </body>
 </html>
