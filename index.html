@@ -58,65 +58,21 @@
                 </div>
                 <div class="col-lg-6">
                     <div class="text-center">
-                        <!-- AI 기업을 대표하는 이미지로 변경 -->
+                        <!-- 3H-Solution.jpg 이미지로 변경 -->
                         <div class="ai-hero-visual position-relative">
-                            <svg width="400" height="400" viewBox="0 0 400 400" class="img-fluid">
-                                <!-- 배경 원 -->
-                                <circle cx="200" cy="200" r="180" fill="url(#gradient1)" opacity="0.1"/>
-                                <circle cx="200" cy="200" r="140" fill="url(#gradient2)" opacity="0.2"/>
-                                <circle cx="200" cy="200" r="100" fill="url(#gradient3)" opacity="0.3"/>
-                                
-                                <!-- AI 뇌 네트워크 -->
-                                <g stroke="rgba(255,255,255,0.6)" stroke-width="2" fill="none">
-                                    <!-- 뇌 형태의 연결선 -->
-                                    <path d="M150,120 Q200,100 250,120 Q280,150 270,190 Q250,220 200,210 Q150,220 130,190 Q120,150 150,120" stroke="rgba(59,130,246,0.8)" stroke-width="3"/>
-                                    
-                                    <!-- 네트워크 노드들 -->
-                                    <circle cx="150" cy="140" r="6" fill="#3b82f6"/>
-                                    <circle cx="200" cy="130" r="8" fill="#2563eb"/>
-                                    <circle cx="250" cy="140" r="6" fill="#3b82f6"/>
-                                    <circle cx="180" cy="170" r="5" fill="#60a5fa"/>
-                                    <circle cx="220" cy="170" r="5" fill="#60a5fa"/>
-                                    <circle cx="200" cy="200" r="7" fill="#1d4ed8"/>
-                                    
-                                    <!-- 연결선들 -->
-                                    <line x1="150" y1="140" x2="200" y2="130"/>
-                                    <line x1="200" y1="130" x2="250" y2="140"/>
-                                    <line x1="180" y1="170" x2="200" y2="130"/>
-                                    <line x1="220" y1="170" x2="200" y2="130"/>
-                                    <line x1="200" y1="200" x2="180" y2="170"/>
-                                    <line x1="200" y1="200" x2="220" y2="170"/>
-                                </g>
-                                
-                                <!-- 데이터 스트림 -->
-                                <g opacity="0.7">
-                                    <rect x="80" y="280" width="60" height="8" rx="4" fill="#3b82f6" opacity="0.8">
-                                        <animate attributeName="opacity" values="0.3;1;0.3" dur="2s" repeatCount="indefinite"/>
-                                    </rect>
-                                    <rect x="160" y="295" width="80" height="6" rx="3" fill="#60a5fa" opacity="0.6">
-                                        <animate attributeName="opacity" values="0.2;0.8;0.2" dur="2.5s" repeatCount="indefinite"/>
-                                    </rect>
-                                    <rect x="260" y="285" width="50" height="10" rx="5" fill="#2563eb" opacity="0.9">
-                                        <animate attributeName="opacity" values="0.4;1;0.4" dur="1.8s" repeatCount="indefinite"/>
-                                    </rect>
-                                </g>
-                                
-                                <!-- 그라디언트 정의 -->
-                                <defs>
-                                    <radialGradient id="gradient1" cx="50%" cy="50%" r="50%">
-                                        <stop offset="0%" stop-color="#3b82f6" stop-opacity="0.3"/>
-                                        <stop offset="100%" stop-color="#1d4ed8" stop-opacity="0.1"/>
-                                    </radialGradient>
-                                    <radialGradient id="gradient2" cx="50%" cy="50%" r="50%">
-                                        <stop offset="0%" stop-color="#60a5fa" stop-opacity="0.4"/>
-                                        <stop offset="100%" stop-color="#3b82f6" stop-opacity="0.2"/>
-                                    </radialGradient>
-                                    <radialGradient id="gradient3" cx="50%" cy="50%" r="50%">
-                                        <stop offset="0%" stop-color="#93c5fd" stop-opacity="0.5"/>
-                                        <stop offset="100%" stop-color="#60a5fa" stop-opacity="0.3"/>
-                                    </radialGradient>
-                                </defs>
-                            </svg>
+                            <img src="images/3H-Solution.jpg" alt="3H-Solutions AI Technology" class="img-fluid rounded-3 shadow-lg" style="max-width: 450px; width: 100%;">
+                            
+                            <!-- 이미지 위에 3H 브랜딩 오버레이 -->
+                            <div class="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center justify-content-center" style="background: linear-gradient(45deg, rgba(59,130,246,0.1) 0%, rgba(29,78,216,0.1) 100%); border-radius: 12px;">
+                                <div class="text-center text-white">
+                                    <h3 class="fw-bold mb-3" style="text-shadow: 2px 2px 4px rgba(0,0,0,0.5);">3H Technology</h3>
+                                    <div class="d-flex justify-content-center gap-3">
+                                        <span class="badge bg-primary px-3 py-2 fw-bold">H</span>
+                                        <span class="badge bg-primary px-3 py-2 fw-bold">H</span>
+                                        <span class="badge bg-primary px-3 py-2 fw-bold">H</span>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>

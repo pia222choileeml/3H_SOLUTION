@@ -38,6 +38,34 @@
 /* AI Visual Effects */
 .ai-hero-visual {
     animation: pulse 4s ease-in-out infinite;
+    transition: transform 0.3s ease;
+}
+
+.ai-hero-visual:hover {
+    transform: scale(1.02);
+}
+
+.ai-hero-visual img {
+    transition: filter 0.3s ease;
+}
+
+.ai-hero-visual:hover img {
+    filter: brightness(1.1) saturate(1.1);
+}
+
+/* 3H Badge Animation */
+.ai-hero-visual .badge {
+    animation: badgePulse 2s ease-in-out infinite;
+    animation-delay: var(--delay, 0s);
+}
+
+.ai-hero-visual .badge:nth-child(1) { --delay: 0s; }
+.ai-hero-visual .badge:nth-child(2) { --delay: 0.3s; }
+.ai-hero-visual .badge:nth-child(3) { --delay: 0.6s; }
+
+@keyframes badgePulse {
+    0%, 100% { transform: scale(1); opacity: 0.8; }
+    50% { transform: scale(1.1); opacity: 1; }
 }
 
 @keyframes pulse {
