@@ -170,6 +170,17 @@ a:hover, button:hover, .btn:hover, [role="button"]:hover {
     background: rgba(255, 255, 255, 0.98);
     backdrop-filter: blur(10px);
     border-top: 3px solid var(--primary-color);
+    z-index: 1060 !important; /* 메가메뉴보다 높은 z-index */
+}
+
+/* 언어 드롭다운 전용 z-index */
+#languageDropdown + .dropdown-menu {
+    z-index: 1060 !important;
+}
+
+/* 드롭다운이 열릴 때 상위 요소의 z-index도 조정 */
+.navbar-nav .dropdown.show {
+    z-index: 1060 !important;
 }
 
 /* ===== MEGA MENU STYLES ===== */

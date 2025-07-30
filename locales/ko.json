@@ -45,7 +45,7 @@
   "megaMenu": {
     "services": {
       "ai": {
-        "title": "AI & Intelligence",
+        "title": "AI & 인공지능",
         "smartFactory": "스마트 팩토리",
         "llm": "LLM 솔루션",
         "vision": "컴퓨터 비전"
